@@ -1,0 +1,37 @@
+:root {
+  --heading-color: #000000;
+  --category-color: #888888;
+  --tac-heading-hover-color: #656565;
+
+  --white: #faf0e6;
+  --mask: radial-gradient(
+        12.81px at 50% calc(100% + 2.5px),
+        #0000 calc(99% - 5px),
+        #000 calc(101% - 5px) 99%,
+        #0000 101%
+      )
+      calc(50% - 20px) calc(50% - 7.5px + 0.5px) / 40px 15px repeat-x,
+    radial-gradient(
+        12.81px at 50% -2.5px,
+        #0000 calc(99% - 5px),
+        #000 calc(101% - 5px) 99%,
+        #0000 101%
+      )
+      50% calc(50% + 7.5px) / 40px 15px repeat-x;
+
+  --background-color: rgb(242, 242, 242);
+
+  --whatsapp-color: #25d366;
+  --x-color: #000;
+  --facebook-color: #3b5998;
+  --linkedin-color: #0072b1;
+  --reddit-color: #ff5700;
+  --pinterest-color: #e60023;
+  --google-plus-color: #db4437;
+  --socialmedia-color: #fff;
+  --code-color: #f2f2f2;
+}
+body {
+  background-color: var(--background-color);
+  overflow-x: hidden !important;
+}
