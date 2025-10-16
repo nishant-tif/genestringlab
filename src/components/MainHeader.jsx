@@ -32,22 +32,26 @@ const MainHeader = () => {
       sx={{
         backgroundColor: "white",
         borderBottom: "1px solid #e0e0e0",
-        // boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-        padding: "15px 0",
+        padding: { xs: "10px 0", md: "15px 0" },
       }}
     >
       <Container maxWidth="xl">
         <Grid container alignItems="center" justifyContent="space-between">
           {/* Logo Section */}
           <Grid item>
-            <Box sx={{ width: "127px", height: "37px" }}>
+            <Box
+              sx={{
+                width: { xs: "100px", md: "127px" },
+                height: { xs: "30px", md: "37px" },
+              }}
+            >
               <Image
                 src="/images/logo.png"
                 alt="GENESTRING LAB"
                 width={127}
                 height={37}
                 style={{
-                  maxHeight: isSmallMobile ? "37px" : "37px",
+                  maxHeight: isSmallMobile ? "30px" : "37px",
                   width: "auto",
                   objectFit: "contain",
                 }}
@@ -62,15 +66,15 @@ const MainHeader = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                gap: isMobile ? 2 : 5,
+                gap: { xs: 1, md: 2, lg: 5 },
               }}
             >
               {/* Desktop Navigation */}
               <Box
                 sx={{
-                  display: isSmallMobile ? "none" : "flex",
+                  display: { xs: "none", lg: "flex" },
                   alignItems: "center",
-                  gap: 4,
+                  gap: { lg: 2, xl: 4 },
                 }}
               >
                 {navItems.map((item, index) => (
@@ -117,7 +121,7 @@ const MainHeader = () => {
               {isSmallMobile && (
                 <IconButton
                   sx={{
-                    display: "flex",
+                    display: { xs: "flex", lg: "none" },
                     marginLeft: "auto",
                   }}
                 >
@@ -129,15 +133,16 @@ const MainHeader = () => {
                 component="a"
                 href="#"
                 sx={{
+                  display: { xs: "none", sm: "inline-flex" },
                   backgroundColor: "transparent",
                   color: "#000000",
                   fontWeight: 600,
-                  fontSize: "15px",
+                  fontSize: { sm: "13px", md: "14px", lg: "15px" },
                   textWrap: "nowrap",
-                  width: "143px",
-                  height: "36px",
+                  width: { sm: "auto", lg: "143px" },
+                  height: { xs: "32px", lg: "36px" },
                   gap: "10px",
-                  padding: "8px 20px",
+                  padding: { sm: "6px 16px", lg: "8px 20px" },
                   borderRadius: "37.5px",
                   border: "2px solid #ffd700",
                   opacity: 1,
@@ -159,11 +164,11 @@ const MainHeader = () => {
                   backgroundColor: "#ffd700",
                   color: "#000000",
                   fontWeight: 600,
-                  fontSize: "15px",
-                  width: "77px",
-                  height: "36px",
+                  fontSize: { xs: "13px", md: "14px", lg: "15px" },
+                  width: { xs: "auto", lg: "77px" },
+                  height: { xs: "32px", lg: "36px" },
                   gap: "10px",
-                  padding: "8px 20px",
+                  padding: { xs: "6px 16px", lg: "8px 20px" },
                   borderRadius: "37.5px",
                   opacity: 1,
                   textTransform: "none",

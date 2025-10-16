@@ -7,7 +7,7 @@ const WhyGenestringCards = () => {
     <Box
       sx={{
         backgroundColor: "#ffffff",
-        padding: "80px 0",
+        padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
       }}
     >
       <Container maxWidth="lg">
@@ -16,11 +16,12 @@ const WhyGenestringCards = () => {
           sx={{
             fontFamily: "Onest",
             fontWeight: 700,
-            fontSize: "40px",
+            fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
             lineHeight: "1.2",
             color: "#000000",
             textAlign: "center",
-            marginBottom: "60px",
+            marginBottom: { xs: "40px", md: "60px" },
+            px: { xs: 2, md: 0 },
           }}
         >
           Why{" "}
@@ -40,22 +41,25 @@ const WhyGenestringCards = () => {
           sx={{
             display: "flex",
             flexWrap: "wrap",
-            gap: "28px 28px",
-            marginBottom: "32px",
+            gap: { xs: "20px", md: "28px" },
+            marginBottom: { xs: "24px", md: "32px" },
             justifyContent: "center",
+            px: { xs: 2, md: 0 },
           }}
         >
           {/* Card 1 - Quick Pickup */}
           <Box>
             <Box
               sx={{
-                width: "400px",
-                height: "117px",
+                width: { xs: "100%", sm: "400px" },
+                maxWidth: "400px",
+                height: "auto",
+                minHeight: { xs: "auto", sm: "117px" },
                 backgroundColor: "#E8F4F1",
                 borderRadius: "18px",
-                padding: "18px 24px",
+                padding: { xs: "16px 20px", sm: "18px 24px" },
                 display: "flex",
-                gap: "25px",
+                gap: { xs: "16px", sm: "25px" },
                 alignItems: "center",
                 justifyContent: "center",
               }}
@@ -119,13 +123,15 @@ const WhyGenestringCards = () => {
           <Box>
             <Box
               sx={{
-                width: "400px",
-                height: "117px",
+                width: { xs: "100%", sm: "400px" },
+                maxWidth: "400px",
+                height: "auto",
+                minHeight: { xs: "auto", sm: "117px" },
                 backgroundColor: "#E8F4F1",
                 borderRadius: "18px",
-                padding: "18px 24px",
+                padding: { xs: "16px 20px", sm: "18px 24px" },
                 display: "flex",
-                gap: "25px",
+                gap: { xs: "16px", sm: "25px" },
                 alignItems: "center",
                 justifyContent: "center",
               }}
@@ -189,13 +195,15 @@ const WhyGenestringCards = () => {
           <Box>
             <Box
               sx={{
-                width: "400px",
-                height: "117px",
+                width: { xs: "100%", sm: "400px" },
+                maxWidth: "400px",
+                height: "auto",
+                minHeight: { xs: "auto", sm: "117px" },
                 backgroundColor: "#E8F4F1",
                 borderRadius: "18px",
-                padding: "18px 24px",
+                padding: { xs: "16px 20px", sm: "18px 24px" },
                 display: "flex",
-                gap: "25px",
+                gap: { xs: "16px", sm: "25px" },
                 alignItems: "center",
                 justifyContent: "center",
               }}
@@ -259,13 +267,15 @@ const WhyGenestringCards = () => {
           <Box>
             <Box
               sx={{
-                width: "400px",
-                height: "117px",
+                width: { xs: "100%", sm: "400px" },
+                maxWidth: "400px",
+                height: "auto",
+                minHeight: { xs: "auto", sm: "117px" },
                 backgroundColor: "#E8F4F1",
                 borderRadius: "18px",
-                padding: "18px 24px",
+                padding: { xs: "16px 20px", sm: "18px 24px" },
                 display: "flex",
-                gap: "25px",
+                gap: { xs: "16px", sm: "25px" },
                 alignItems: "center",
                 justifyContent: "center",
               }}
@@ -330,18 +340,19 @@ const WhyGenestringCards = () => {
         <Box
           sx={{
             textAlign: "center",
-            padding: "20px 32px",
+            padding: { xs: "16px 24px", md: "20px 32px" },
             border: "2px dashed #C8C8C8",
             borderRadius: "12px",
             maxWidth: "fit-content",
             margin: "0 auto",
+            mx: { xs: 2, md: "auto" },
           }}
         >
           <Typography
             sx={{
               fontFamily: "Onest",
               fontWeight: 400,
-              fontSize: "16px",
+              fontSize: { xs: "14px", md: "16px" },
               lineHeight: "1.5",
               color: "#999999",
               fontStyle: "italic",

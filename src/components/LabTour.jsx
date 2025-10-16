@@ -8,7 +8,7 @@ const LabTour = () => {
     <Box
       sx={{
         backgroundColor: "#F8F6F2",
-        padding: "80px 0",
+        padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
       }}
     >
       <Container maxWidth="lg">
@@ -16,18 +16,19 @@ const LabTour = () => {
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
-            gap: { xs: "40px", md: "60px" },
+            gap: { xs: "32px", md: "60px" },
             alignItems: "center",
+            px: { xs: 2, md: 0 },
           }}
         >
           {/* Left Section - Video/Image */}
           <Box
             sx={{
               flex: "0 0 auto",
-              width: { xs: "100%", md: "680px" },
-              height: { xs: "auto", md: "390px" },
+              width: { xs: "100%", sm: "90%", md: "680px" },
+              height: { xs: "250px", sm: "350px", md: "390px" },
               position: "relative",
-              borderRadius: "24px",
+              borderRadius: { xs: "16px", md: "24px" },
               overflow: "hidden",
             }}
           >
@@ -57,7 +58,7 @@ const LabTour = () => {
             >
               <PlayCircleOutline
                 sx={{
-                  fontSize: "80px",
+                  fontSize: { xs: "60px", md: "80px" },
                   color: "white",
                   filter: "drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))",
                 }}
@@ -80,7 +81,7 @@ const LabTour = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 700,
-                fontSize: "40px",
+                fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
                 lineHeight: "1.2",
                 color: "#000000",
               }}
@@ -93,7 +94,7 @@ const LabTour = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 400,
-                fontSize: "18px",
+                fontSize: { xs: "14px", sm: "16px", md: "18px" },
                 lineHeight: "1.6",
                 color: "#666666",
               }}

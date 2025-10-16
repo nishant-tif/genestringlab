@@ -52,7 +52,7 @@ const LaboratoryInstruments = () => {
     <Box
       sx={{
         backgroundColor: "#ffffff",
-        padding: "80px 0",
+        padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
       }}
     >
       <Container maxWidth="lg">
@@ -61,28 +61,30 @@ const LaboratoryInstruments = () => {
           sx={{
             fontFamily: "Onest",
             fontWeight: 700,
-            fontSize: "40px",
+            fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
             lineHeight: "1.2",
             color: "#000000",
             textAlign: "center",
-            marginBottom: "60px",
+            marginBottom: { xs: "40px", md: "60px" },
+            px: { xs: 2, md: 0 },
           }}
         >
           Our Laboratory Instruments
         </Typography>
 
         {/* Next Generation Sequencing Platforms Section */}
-        <Box sx={{ marginBottom: "80px" }}>
+        <Box sx={{ marginBottom: { xs: "50px", md: "80px" } }}>
           {/* Section Title */}
           <Typography
             sx={{
               fontFamily: "Onest",
               fontWeight: 500,
-              fontSize: "24px",
+              fontSize: { xs: "20px", md: "24px" },
               lineHeight: "1.4",
               color: "#333333",
               textAlign: "center",
-              marginBottom: "48px",
+              marginBottom: { xs: "32px", md: "48px" },
+              px: { xs: 2, md: 0 },
             }}
           >
             Next Generation Sequencing Platforms
@@ -95,10 +97,12 @@ const LaboratoryInstruments = () => {
               gridTemplateColumns: {
                 xs: "1fr",
                 sm: "repeat(2, 1fr)",
-                md: "repeat(4, 1fr)",
+                md: "repeat(3, 1fr)",
+                lg: "repeat(4, 1fr)",
               },
-              gap: "32px",
+              gap: { xs: "24px", md: "32px" },
               alignItems: "end",
+              px: { xs: 2, md: 0 },
             }}
           >
             {nextGenSequencing.map((instrument) => (
@@ -148,11 +152,11 @@ const LaboratoryInstruments = () => {
                   sx={{
                     fontFamily: "Onest",
                     fontWeight: 500,
-                    fontSize: "16px",
+                    fontSize: { xs: "14px", md: "16px" },
                     lineHeight: "1.4",
                     color: "#333333",
                     textAlign: "center",
-                    minHeight: "44px",
+                    minHeight: { xs: "auto", md: "44px" },
                   }}
                 >
                   {instrument.name}
@@ -169,11 +173,12 @@ const LaboratoryInstruments = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 500,
-              fontSize: "24px",
+              fontSize: { xs: "20px", md: "24px" },
               lineHeight: "1.4",
               color: "#333333",
               textAlign: "center",
-              marginBottom: "48px",
+              marginBottom: { xs: "32px", md: "48px" },
+              px: { xs: 2, md: 0 },
             }}
           >
             Sanger Sequencing
@@ -188,10 +193,11 @@ const LaboratoryInstruments = () => {
                 sm: "repeat(2, 1fr)",
                 md: "repeat(3, 1fr)",
               },
-              gap: "48px",
+              gap: { xs: "32px", md: "48px" },
               alignItems: "end",
               maxWidth: "1000px",
               margin: "0 auto",
+              px: { xs: 2, md: 0 },
             }}
           >
             {sangerSequencing.map((instrument) => (
@@ -238,11 +244,11 @@ const LaboratoryInstruments = () => {
                   sx={{
                     fontFamily: "Onest",
                     fontWeight: 500,
-                    fontSize: "16px",
+                    fontSize: { xs: "14px", md: "16px" },
                     lineHeight: "1.4",
                     color: "#333333",
                     textAlign: "center",
-                    minHeight: "44px",
+                    minHeight: { xs: "auto", md: "44px" },
                   }}
                 >
                   {instrument.name}

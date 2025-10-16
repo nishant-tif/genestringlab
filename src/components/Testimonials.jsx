@@ -63,34 +63,35 @@ const Testimonials = () => {
     <Box
       sx={{
         backgroundColor: "#ffffff",
-        padding: "60px 0",
+        padding: { xs: "40px 0", md: "60px 0" },
       }}
     >
       <Container maxWidth="xl">
         <Box
           sx={{
             backgroundColor: "#F8F6F2",
-            borderRadius: "24px",
-            padding: { xs: "40px 20px", md: "50px 80px" },
+            borderRadius: { xs: "16px", md: "24px" },
+            padding: { xs: "30px 20px", md: "50px 80px" },
             position: "relative",
+            mx: { xs: 2, md: 0 },
           }}
         >
           {/* Navigation Controls */}
           <Box
             sx={{
               position: "absolute",
-              top: "40px",
-              right: "40px",
+              top: { xs: "20px", md: "40px" },
+              right: { xs: "20px", md: "40px" },
               display: "flex",
               alignItems: "center",
-              gap: "16px",
+              gap: { xs: "12px", md: "16px" },
             }}
           >
             <IconButton
               onClick={handlePrevious}
               sx={{
-                width: "40px",
-                height: "40px",
+                width: { xs: "32px", md: "40px" },
+                height: { xs: "32px", md: "40px" },
                 border: "1px solid #333333",
                 borderRadius: "8px",
                 backgroundColor: "transparent",
@@ -99,14 +100,16 @@ const Testimonials = () => {
                 },
               }}
             >
-              <ChevronLeft sx={{ color: "#333333" }} />
+              <ChevronLeft
+                sx={{ color: "#333333", fontSize: { xs: "18px", md: "24px" } }}
+              />
             </IconButton>
 
             <Typography
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 500,
-                fontSize: "16px",
+                fontSize: { xs: "14px", md: "16px" },
                 color: "#333333",
               }}
             >
@@ -116,8 +119,8 @@ const Testimonials = () => {
             <IconButton
               onClick={handleNext}
               sx={{
-                width: "40px",
-                height: "40px",
+                width: { xs: "32px", md: "40px" },
+                height: { xs: "32px", md: "40px" },
                 border: "1px solid #333333",
                 borderRadius: "8px",
                 backgroundColor: "transparent",
@@ -126,7 +129,9 @@ const Testimonials = () => {
                 },
               }}
             >
-              <ChevronRight sx={{ color: "#333333" }} />
+              <ChevronRight
+                sx={{ color: "#333333", fontSize: { xs: "18px", md: "24px" } }}
+              />
             </IconButton>
           </Box>
 
@@ -142,11 +147,12 @@ const Testimonials = () => {
             {/* Left Section - Title and Description */}
             <Box
               sx={{
-                width: "487px",
-                height: "300px",
-                gap: "24px",
-                paddingTop: "40px",
-                paddingBottom: "40px",
+                width: { xs: "100%", md: "487px" },
+                height: "auto",
+                minHeight: { xs: "auto", md: "300px" },
+                gap: { xs: "16px", md: "24px" },
+                paddingTop: { xs: "20px", md: "40px" },
+                paddingBottom: { xs: "20px", md: "40px" },
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -156,10 +162,10 @@ const Testimonials = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 700,
-                  fontSize: "40px",
+                  fontSize: { xs: "24px", sm: "32px", md: "40px" },
                   lineHeight: "1.2",
                   color: "#333333",
-                  marginBottom: "24px",
+                  marginBottom: { xs: "12px", md: "24px" },
                 }}
               >
                 What Our Customers Are Saying About Us
@@ -169,7 +175,7 @@ const Testimonials = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 400,
-                  fontSize: "16px",
+                  fontSize: { xs: "14px", md: "16px" },
                   lineHeight: "1.6",
                   color: "#666666",
                 }}
@@ -183,10 +189,11 @@ const Testimonials = () => {
             {/* Right Section - Testimonial Card */}
             <Box
               sx={{
-                width: "578px",
-                height: "350px",
+                width: { xs: "100%", md: "578px" },
+                height: "auto",
+                minHeight: { xs: "auto", md: "350px" },
                 gap: "10px",
-                paddingTop: "20px",
+                paddingTop: { xs: "10px", md: "20px" },
                 position: "relative",
                 display: "flex",
                 flexDirection: "column",
@@ -195,13 +202,13 @@ const Testimonials = () => {
               {/* Quote Icon */}
               <Box
                 sx={{
-                  marginBottom: "16px",
+                  marginBottom: { xs: "8px", md: "16px" },
                 }}
               >
                 <Typography
                   sx={{
                     fontFamily: "Georgia, serif",
-                    fontSize: "64px",
+                    fontSize: { xs: "48px", md: "64px" },
                     color: "#D4AF37",
                     lineHeight: 1,
                     fontWeight: 700,
@@ -216,10 +223,10 @@ const Testimonials = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 400,
-                  fontSize: "16px",
+                  fontSize: { xs: "14px", md: "16px" },
                   lineHeight: "1.6",
                   color: "#333333",
-                  marginBottom: "20px",
+                  marginBottom: { xs: "12px", md: "20px" },
                 }}
               >
                 {currentTestimonial.text}
@@ -229,15 +236,15 @@ const Testimonials = () => {
               <Box
                 sx={{
                   display: "flex",
-                  gap: "8px",
-                  marginBottom: "20px",
+                  gap: { xs: "6px", md: "8px" },
+                  marginBottom: { xs: "12px", md: "20px" },
                 }}
               >
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Box
                     key={star}
                     sx={{
-                      fontSize: "24px",
+                      fontSize: { xs: "20px", md: "24px" },
                       color:
                         star <= currentTestimonial.rating
                           ? "#FFA500"
@@ -268,8 +275,8 @@ const Testimonials = () => {
                 {/* User Image */}
                 <Box
                   sx={{
-                    width: "56px",
-                    height: "56px",
+                    width: { xs: "48px", md: "56px" },
+                    height: { xs: "48px", md: "56px" },
                     borderRadius: "50%",
                     overflow: "hidden",
                     position: "relative",
@@ -289,7 +296,7 @@ const Testimonials = () => {
                     sx={{
                       fontFamily: "Onest",
                       fontWeight: 600,
-                      fontSize: "18px",
+                      fontSize: { xs: "16px", md: "18px" },
                       color: "#333333",
                       lineHeight: 1.4,
                     }}
@@ -300,7 +307,7 @@ const Testimonials = () => {
                     sx={{
                       fontFamily: "Onest",
                       fontWeight: 400,
-                      fontSize: "14px",
+                      fontSize: { xs: "12px", md: "14px" },
                       color: "#666666",
                       lineHeight: 1.4,
                     }}

@@ -40,7 +40,7 @@ const BlogsSection = () => {
     <Box
       sx={{
         backgroundColor: "#F4F1EB",
-        padding: "80px 0",
+        padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
       }}
     >
       <Container maxWidth="xl">
@@ -50,9 +50,10 @@ const BlogsSection = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "flex-start",
-            marginBottom: "40px",
-            flexDirection: isMobile ? "column" : "row",
-            gap: isMobile ? 3 : 0,
+            marginBottom: { xs: "32px", md: "40px" },
+            flexDirection: { xs: "column", md: "row" },
+            gap: { xs: 3, md: 0 },
+            px: { xs: 2, md: 0 },
           }}
         >
           {/* Title */}
@@ -61,8 +62,8 @@ const BlogsSection = () => {
               color: "#333333",
               fontFamily: "Onest",
               fontWeight: 700,
-              fontSize: "34px",
-              lineHeight: "32px",
+              fontSize: { xs: "28px", md: "34px" },
+              lineHeight: { xs: "1.2", md: "32px" },
               letterSpacing: "0%",
               margin: 0,
               padding: 0,
@@ -117,16 +118,17 @@ const BlogsSection = () => {
         <Box
           sx={{
             position: "relative",
-            marginTop: "50px",
+            marginTop: { xs: "40px", md: "50px" },
+            px: { xs: 2, md: 0 },
           }}
         >
-          <Grid container spacing={4} justifyContent="center">
+          <Grid container spacing={{ xs: 3, md: 4 }} justifyContent="center">
             {blogPosts.map((post, index) => (
-              <Grid item xs={12} md={4} key={post.id}>
+              <Grid item xs={12} sm={6} md={4} key={post.id}>
                 <Box
                   sx={{
                     backgroundColor: "white",
-                    borderRadius: "12px",
+                    borderRadius: { xs: "8px", md: "12px" },
                     overflow: "hidden",
                     boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
                     position: "relative",
@@ -142,9 +144,9 @@ const BlogsSection = () => {
                     sx={{
                       position: "relative",
                       width: "100%",
-                      height: "250px",
+                      height: { xs: "200px", md: "250px" },
                       overflow: "hidden",
-                      borderRadius: "10px 10px 0 0",
+                      borderRadius: { xs: "6px 6px 0 0", md: "10px 10px 0 0" },
                     }}
                   >
                     <Image
@@ -160,7 +162,7 @@ const BlogsSection = () => {
                   {/* Blog Content */}
                   <Box
                     sx={{
-                      padding: "24px",
+                      padding: { xs: "20px", md: "24px" },
                       flex: 1,
                       display: "flex",
                       flexDirection: "column",
@@ -172,7 +174,7 @@ const BlogsSection = () => {
                     {/* Title */}
                     <Box
                       sx={{
-                        minHeight: "64px",
+                        minHeight: { xs: "auto", md: "64px" },
                         display: "flex",
                         alignItems: "flex-start",
                       }}
@@ -182,8 +184,8 @@ const BlogsSection = () => {
                           color: "#333333",
                           fontFamily: "Onest",
                           fontWeight: 600,
-                          fontSize: "20px",
-                          lineHeight: "32px",
+                          fontSize: { xs: "18px", md: "20px" },
+                          lineHeight: { xs: "1.4", md: "32px" },
                           letterSpacing: "0%",
                           margin: 0,
                           padding: 0,
@@ -197,9 +199,9 @@ const BlogsSection = () => {
                     <Box
                       sx={{
                         position: "absolute",
-                        top: "88px",
-                        left: "24px",
-                        right: "24px",
+                        top: { xs: "75px", md: "88px" },
+                        left: { xs: "20px", md: "24px" },
+                        right: { xs: "20px", md: "24px" },
                         height: "1px",
                         backgroundColor: "#e0e0e0",
                       }}
@@ -209,9 +211,9 @@ const BlogsSection = () => {
                     <Box
                       sx={{
                         position: "absolute",
-                        top: "100px",
-                        left: "24px",
-                        right: "24px",
+                        top: { xs: "85px", md: "100px" },
+                        left: { xs: "20px", md: "24px" },
+                        right: { xs: "20px", md: "24px" },
                         height: "20px",
                         display: "flex",
                         alignItems: "center",
@@ -224,7 +226,7 @@ const BlogsSection = () => {
                           color: "#FD9C00",
                           fontFamily: "Onest",
                           fontWeight: 500,
-                          fontSize: "16px",
+                          fontSize: { xs: "14px", md: "16px" },
                           lineHeight: "100%",
                           letterSpacing: "0%",
                           textDecoration: "none",

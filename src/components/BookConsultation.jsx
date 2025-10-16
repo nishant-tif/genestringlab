@@ -22,7 +22,7 @@ const BookConsultation = () => {
     <Box
       sx={{
         backgroundColor: "#ffffff",
-        padding: "80px 0",
+        padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
       }}
     >
       <Container maxWidth="lg">
@@ -30,18 +30,19 @@ const BookConsultation = () => {
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
-            gap: { xs: "40px", md: "60px" },
+            gap: { xs: "32px", md: "60px" },
             alignItems: "stretch",
+            px: { xs: 2, md: 0 },
           }}
         >
           {/* Left Section - Image */}
           <Box
             sx={{
               flex: "0 0 auto",
-              width: { xs: "100%", md: "680px" },
-              height: { xs: "auto", md: "450px" },
+              width: { xs: "100%", sm: "90%", md: "680px" },
+              height: { xs: "300px", sm: "400px", md: "450px" },
               position: "relative",
-              borderRadius: "24px",
+              borderRadius: { xs: "16px", md: "24px" },
               overflow: "hidden",
             }}
           >
@@ -70,7 +71,7 @@ const BookConsultation = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 700,
-                fontSize: "34px",
+                fontSize: { xs: "24px", sm: "28px", md: "30px", lg: "34px" },
                 lineHeight: "1.2",
                 color: "#000000",
               }}
@@ -83,7 +84,7 @@ const BookConsultation = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "24px",
+                gap: { xs: "16px", md: "24px" },
               }}
             >
               {services.map((service) => (
@@ -92,8 +93,8 @@ const BookConsultation = () => {
                   sx={{
                     backgroundColor: "#ffffff",
                     border: "1px solid #E0E0E0",
-                    borderRadius: "16px",
-                    padding: "32px",
+                    borderRadius: { xs: "12px", md: "16px" },
+                    padding: { xs: "20px", md: "32px" },
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
@@ -111,7 +112,7 @@ const BookConsultation = () => {
                     sx={{
                       fontFamily: "Onest",
                       fontWeight: 500,
-                      fontSize: "20px",
+                      fontSize: { xs: "16px", md: "18px", lg: "20px" },
                       lineHeight: "1.4",
                       color: "#333333",
                       flex: 1,
@@ -122,13 +123,13 @@ const BookConsultation = () => {
 
                   <Box
                     sx={{
-                      width: "40px",
-                      height: "40px",
+                      width: { xs: "32px", md: "40px" },
+                      height: { xs: "32px", md: "40px" },
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
                       flexShrink: 0,
-                      marginLeft: "16px",
+                      marginLeft: { xs: "12px", md: "16px" },
                       position: "relative",
                     }}
                   >

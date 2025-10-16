@@ -20,7 +20,7 @@ const Footer = () => {
     <Box
       sx={{
         backgroundColor: "#F8F6F2",
-        padding: "60px 0 40px 0",
+        padding: { xs: "40px 0 30px 0", md: "60px 0 40px 0" },
       }}
     >
       <Container maxWidth="xl">
@@ -30,15 +30,16 @@ const Footer = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            marginBottom: "60px",
-            flexDirection: isMobile ? "column" : "row",
-            gap: isMobile ? 3 : 0,
+            marginBottom: { xs: "40px", md: "60px" },
+            flexDirection: { xs: "column", md: "row" },
+            gap: { xs: 3, md: 0 },
+            px: { xs: 2, md: 0 },
           }}
         >
           <Box
             sx={{
-              width: "293px",
-              height: "67px",
+              width: { xs: "100%", md: "293px" },
+              height: "auto",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -49,7 +50,7 @@ const Footer = () => {
                 color: "#333333",
                 fontFamily: "Onest",
                 fontWeight: 500,
-                fontSize: "34px",
+                fontSize: { xs: "24px", sm: "28px", md: "34px" },
                 lineHeight: "100%",
                 letterSpacing: "0%",
                 textTransform: "capitalize",
@@ -68,15 +69,16 @@ const Footer = () => {
               display: "flex",
               gap: "8px",
               alignItems: "center",
-              width: "494px",
-              height: "46px",
+              width: { xs: "100%", md: "494px" },
+              height: { xs: "auto", md: "46px" },
+              flexDirection: { xs: "column", sm: "row" },
             }}
           >
             <TextField
               placeholder="Enter Your Email"
               variant="outlined"
               sx={{
-                width: "360px",
+                width: { xs: "100%", sm: "360px" },
                 height: "46px",
                 "& .MuiOutlinedInput-root": {
                   backgroundColor: "white",
@@ -94,8 +96,8 @@ const Footer = () => {
                   },
                 },
                 "& .MuiInputBase-input": {
-                  fontSize: "14px",
-                  padding: "18px 24px",
+                  fontSize: { xs: "12px", md: "14px" },
+                  padding: { xs: "16px 20px", md: "18px 24px" },
                   height: "auto",
                 },
               }}
@@ -105,8 +107,8 @@ const Footer = () => {
                 backgroundColor: "#15876B",
                 color: "white",
                 fontWeight: 600,
-                fontSize: "14px",
-                width: "126px",
+                fontSize: { xs: "12px", md: "14px" },
+                width: { xs: "100%", sm: "126px" },
                 height: "46px",
                 borderRadius: "100px",
                 opacity: 1,
@@ -128,27 +130,33 @@ const Footer = () => {
         <Box
           sx={{
             borderTop: "1px solid #e0e0e0",
-            margin: "40px 0",
+            margin: { xs: "32px 0", md: "40px 0" },
+            mx: { xs: 2, md: 0 },
           }}
         />
 
         {/* Middle Section - Company Info and Navigation */}
-        <Grid container spacing={6}>
+        <Grid
+          container
+          spacing={{ xs: 4, md: 6 }}
+          sx={{ px: { xs: 2, md: 0 } }}
+        >
           {/* Left Column - Logo and Description */}
           <Grid item xs={12} md={6}>
             <Box
               sx={{
-                width: "486px",
-                height: "136px",
+                width: { xs: "100%", md: "486px" },
+                height: "auto",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
+                gap: { xs: 2, md: 0 },
               }}
             >
               <Box
                 sx={{
-                  width: "188px",
-                  height: "48px",
+                  width: { xs: "160px", md: "188px" },
+                  height: { xs: "40px", md: "48px" },
                 }}
               >
                 <Image
@@ -158,6 +166,7 @@ const Footer = () => {
                   height={48}
                   style={{
                     maxHeight: "48px",
+                    width: "auto",
                     objectFit: "contain",
                   }}
                 />
@@ -167,12 +176,12 @@ const Footer = () => {
                   color: "black",
                   fontFamily: "Onest",
                   fontWeight: 500,
-                  fontSize: "14px",
+                  fontSize: { xs: "12px", md: "14px" },
                   lineHeight: "24px",
                   letterSpacing: "0%",
                   textTransform: "capitalize",
-                  width: "486px",
-                  height: "34px",
+                  width: { xs: "100%", md: "486px" },
+                  height: "auto",
                 }}
               >
                 Genestrings Aspires To Be The Company That Best Understands And
@@ -312,18 +321,28 @@ const Footer = () => {
         <Box
           sx={{
             borderTop: "1px solid #e0e0e0",
-            marginTop: "60px",
-            paddingTop: "30px",
+            marginTop: { xs: "40px", md: "60px" },
+            paddingTop: { xs: "24px", md: "30px" },
+            mx: { xs: 2, md: 0 },
           }}
         >
-          <Grid container alignItems="center" justifyContent="space-between">
-            <Grid item>
+          <Grid
+            container
+            alignItems="center"
+            justifyContent="space-between"
+            sx={{
+              flexDirection: { xs: "column", md: "row" },
+              gap: { xs: 2, md: 0 },
+            }}
+          >
+            <Grid item xs={12} md="auto">
               <Box
                 sx={{
-                  width: "398px",
-                  height: "10px",
+                  width: { xs: "100%", md: "398px" },
+                  height: "auto",
                   display: "flex",
                   alignItems: "center",
+                  justifyContent: { xs: "center", md: "flex-start" },
                 }}
               >
                 <Typography
@@ -331,20 +350,27 @@ const Footer = () => {
                     color: "#333333",
                     fontFamily: "Onest",
                     fontWeight: 500,
-                    fontSize: "14px",
+                    fontSize: { xs: "12px", md: "14px" },
                     lineHeight: "24px",
                     letterSpacing: "0%",
                     textTransform: "capitalize",
                     margin: 0,
                     padding: 0,
+                    textAlign: { xs: "center", md: "left" },
                   }}
                 >
                   Genestrings Diagnostic Centre - © 2025 All Rights Reserved
                 </Typography>
               </Box>
             </Grid>
-            <Grid item>
-              <Box sx={{ display: "flex", gap: 3 }}>
+            <Grid item xs={12} md="auto">
+              <Box
+                sx={{
+                  display: "flex",
+                  gap: { xs: 2, md: 3 },
+                  justifyContent: { xs: "center", md: "flex-end" },
+                }}
+              >
                 {/* YouTube */}
                 <Box
                   sx={{
@@ -361,8 +387,8 @@ const Footer = () => {
                   <Image
                     src="/images/youtube.png"
                     alt="YouTube"
-                    width={32}
-                    height={32}
+                    width={28}
+                    height={28}
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
@@ -383,8 +409,8 @@ const Footer = () => {
                   <Image
                     src="/images/twitter.png"
                     alt="Twitter"
-                    width={32}
-                    height={32}
+                    width={28}
+                    height={28}
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
@@ -405,8 +431,8 @@ const Footer = () => {
                   <Image
                     src="/images/linkedin.png"
                     alt="LinkedIn"
-                    width={32}
-                    height={32}
+                    width={28}
+                    height={28}
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
@@ -427,8 +453,8 @@ const Footer = () => {
                   <Image
                     src="/images/insta.png"
                     alt="Instagram"
-                    width={32}
-                    height={32}
+                    width={28}
+                    height={28}
                     style={{ objectFit: "contain" }}
                   />
                 </Box>

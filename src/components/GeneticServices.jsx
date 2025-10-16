@@ -66,7 +66,7 @@ const GeneticServices = () => {
     <Box
       sx={{
         backgroundColor: "#ffffff",
-        padding: "80px 0",
+        padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
       }}
     >
       <Container maxWidth="xl">
@@ -77,8 +77,9 @@ const GeneticServices = () => {
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
             alignItems: { xs: "flex-start", md: "center" },
-            marginBottom: "60px",
+            marginBottom: { xs: "40px", md: "60px" },
             gap: { xs: "24px", md: "40px" },
+            px: { xs: 2, md: 0 },
           }}
         >
           {/* Title */}
@@ -86,10 +87,10 @@ const GeneticServices = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 700,
-              fontSize: "40px",
+              fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
               lineHeight: "1.2",
               color: "#000000",
-              minWidth: "300px",
+              minWidth: { xs: "auto", md: "300px" },
             }}
           >
             Our Genetic Services
@@ -100,10 +101,10 @@ const GeneticServices = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 400,
-              fontSize: "16px",
+              fontSize: { xs: "14px", md: "16px" },
               lineHeight: "1.6",
               color: "#333333",
-              maxWidth: "800px",
+              maxWidth: { xs: "100%", md: "800px" },
             }}
           >
             At Genestrings, we provide{" "}
@@ -126,25 +127,30 @@ const GeneticServices = () => {
             gridTemplateColumns: {
               xs: "1fr",
               sm: "repeat(2, 1fr)",
-              md: "repeat(4, 1fr)",
+              md: "repeat(3, 1fr)",
+              lg: "repeat(4, 1fr)",
             },
-            gap: "26px",
+            gap: { xs: "20px", md: "26px" },
+            justifyItems: { xs: "center", lg: "stretch" },
+            px: { xs: 2, md: 0 },
           }}
         >
           {services.map((service) => (
             <Box
               key={service.id}
               sx={{
-                width: "310px",
-                height: "190px",
+                width: { xs: "100%", sm: "310px" },
+                maxWidth: "310px",
+                height: "auto",
+                minHeight: { xs: "auto", sm: "190px" },
                 backgroundColor: "#F8F6F2",
                 borderRadius: "16px",
                 border: "1px solid #E0E0E0",
-                padding: "10px 20px 40px 20px",
-                paddingTop: "32px",
+                padding: { xs: "20px", sm: "10px 20px 40px 20px" },
+                paddingTop: { xs: "24px", sm: "32px" },
                 display: "flex",
                 flexDirection: "column",
-                gap: "32px",
+                gap: { xs: "16px", sm: "32px" },
                 transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 "&:hover": {
                   transform: "translateY(-4px)",
@@ -186,7 +192,7 @@ const GeneticServices = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 600,
-                  fontSize: "18px",
+                  fontSize: { xs: "16px", sm: "18px" },
                   lineHeight: "1.3",
                   color: "#000000",
                 }}
@@ -199,7 +205,7 @@ const GeneticServices = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 400,
-                  fontSize: "16px",
+                  fontSize: { xs: "14px", sm: "16px" },
                   lineHeight: "1.5",
                   color: "black",
                 }}

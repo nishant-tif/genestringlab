@@ -18,29 +18,28 @@ const BlackHeader = () => {
       sx={{
         backgroundColor: "black",
         borderBottom: "1px solid #444444",
-        height: "30px",
         minHeight: "30px",
-        display: "flex",
+        display: { xs: "none", md: "flex" },
         alignItems: "center",
+        py: { xs: 1, md: 0 },
       }}
     >
       <Container maxWidth="xl">
         <Grid container alignItems="center" justifyContent="space-between">
-          <Grid item>
+          <Grid item xs={12} md={6}>
             <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
-                gap: 2.5,
-                flexDirection: isMobile ? "column" : "row",
-                gap: isMobile ? 1 : 2.5,
+                gap: { xs: 1.5, md: 2.5 },
+                flexWrap: "wrap",
               }}
             >
               <Typography
                 variant="body2"
                 sx={{
                   color: "white",
-                  fontSize: "14px",
+                  fontSize: { xs: "12px", md: "14px" },
                   fontWeight: 400,
                 }}
               >
@@ -53,13 +52,18 @@ const BlackHeader = () => {
                   gap: 1,
                 }}
               >
-                <Phone sx={{ color: "#FFD500", fontSize: "16px" }} />
+                <Phone
+                  sx={{
+                    color: "#FFD500",
+                    fontSize: { xs: "14px", md: "16px" },
+                  }}
+                />
                 <Typography
                   variant="body2"
                   sx={{
                     color: "#FFD500",
                     fontWeight: 600,
-                    fontSize: "14px",
+                    fontSize: { xs: "12px", md: "14px" },
                   }}
                 >
                   9717300900
@@ -68,12 +72,14 @@ const BlackHeader = () => {
             </Box>
           </Grid>
 
-          <Grid item>
+          <Grid item xs={12} md={6}>
             <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
-                gap: isMobile ? 1.5 : 3,
+                gap: { xs: 1.5, md: 3 },
+                justifyContent: { xs: "flex-start", md: "flex-end" },
+                flexWrap: "wrap",
               }}
             >
               <Typography
@@ -82,7 +88,7 @@ const BlackHeader = () => {
                 sx={{
                   color: "white",
                   textDecoration: "none",
-                  fontSize: "14px",
+                  fontSize: { xs: "12px", md: "14px" },
                   fontWeight: 400,
                   "&:hover": { color: "#ffd700" },
                 }}
@@ -95,7 +101,7 @@ const BlackHeader = () => {
                 sx={{
                   color: "white",
                   textDecoration: "none",
-                  fontSize: "14px",
+                  fontSize: { xs: "12px", md: "14px" },
                   fontWeight: 400,
                   display: "flex",
                   alignItems: "center",
@@ -112,7 +118,7 @@ const BlackHeader = () => {
                 sx={{
                   color: "white",
                   textDecoration: "none",
-                  fontSize: "14px",
+                  fontSize: { xs: "12px", md: "14px" },
                   fontWeight: 400,
                   display: "flex",
                   alignItems: "center",
@@ -129,7 +135,7 @@ const BlackHeader = () => {
                 sx={{
                   color: "white",
                   textDecoration: "none",
-                  fontSize: "14px",
+                  fontSize: { xs: "12px", md: "14px" },
                   fontWeight: 400,
                   display: "flex",
                   alignItems: "center",
