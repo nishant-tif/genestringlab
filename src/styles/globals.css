@@ -31,7 +31,23 @@
   --socialmedia-color: #fff;
   --code-color: #f2f2f2;
 }
+
 body {
   background-color: var(--background-color);
   overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
 }
+
+/* Material-UI adjustments for header components */
+.MuiContainer-root {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Ensure proper spacing for headers */
+.MuiGrid-container {
+  width: 100%;
+}
+
+/* Blog cards positioned outside background */
