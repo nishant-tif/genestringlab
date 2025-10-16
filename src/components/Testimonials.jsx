@@ -63,7 +63,7 @@ const Testimonials = () => {
     <Box
       sx={{
         backgroundColor: "#ffffff",
-        padding: "80px 0",
+        padding: "60px 0",
       }}
     >
       <Container maxWidth="xl">
@@ -71,7 +71,7 @@ const Testimonials = () => {
           sx={{
             backgroundColor: "#F8F6F2",
             borderRadius: "24px",
-            padding: { xs: "40px 20px", md: "60px 80px" },
+            padding: { xs: "40px 20px", md: "50px 80px" },
             position: "relative",
           }}
         >
@@ -143,10 +143,10 @@ const Testimonials = () => {
             <Box
               sx={{
                 width: "487px",
-                height: "372px",
-                gap: "38px",
-                paddingTop: "85px",
-                paddingBottom: "85px",
+                height: "300px",
+                gap: "24px",
+                paddingTop: "40px",
+                paddingBottom: "40px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -184,9 +184,9 @@ const Testimonials = () => {
             <Box
               sx={{
                 width: "578px",
-                height: "429px",
+                height: "350px",
                 gap: "10px",
-                paddingTop: "32px",
+                paddingTop: "20px",
                 position: "relative",
                 display: "flex",
                 flexDirection: "column",
@@ -195,7 +195,7 @@ const Testimonials = () => {
               {/* Quote Icon */}
               <Box
                 sx={{
-                  marginBottom: "24px",
+                  marginBottom: "16px",
                 }}
               >
                 <Typography
@@ -216,10 +216,10 @@ const Testimonials = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 400,
-                  fontSize: "18px",
-                  lineHeight: "1.8",
+                  fontSize: "16px",
+                  lineHeight: "1.6",
                   color: "#333333",
-                  marginBottom: "32px",
+                  marginBottom: "20px",
                 }}
               >
                 {currentTestimonial.text}
@@ -230,7 +230,7 @@ const Testimonials = () => {
                 sx={{
                   display: "flex",
                   gap: "8px",
-                  marginBottom: "32px",
+                  marginBottom: "20px",
                 }}
               >
                 {[1, 2, 3, 4, 5].map((star) => (
@@ -253,7 +253,7 @@ const Testimonials = () => {
               <Box
                 sx={{
                   borderTop: "1px solid #D0D0D0",
-                  marginBottom: "24px",
+                  marginBottom: "16px",
                 }}
               />
 
