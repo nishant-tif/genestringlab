@@ -8,10 +8,12 @@ import LaboratoryInstruments from "../components/LaboratoryInstruments";
 import LabTour from "../components/LabTour";
 import WhyGenestring from "../components/WhyGenestring";
 import GeneticServices from "../components/GeneticServices";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home({ topStories, trendingNews, dataMar, catData }) {
   return (
     <Layout>
+      <HeroSection />
       <GeneticServices />
       <WhyGenestring />
       <LabTour />
