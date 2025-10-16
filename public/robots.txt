@@ -34,9 +34,3 @@ Disallow: /
 
 # Sitemaps
 
-Sitemap: https://khabargaon.com/api/sitemap.xml
-Sitemap: https://khabargaon.com/api/sitemaps/global/web-stories.xml
-Sitemap: https://khabargaon.com/api/sitemaps/global/all-news.xml
-Sitemap: https://khabargaon.com/api/sitemaps/global/post-image.xml
-Sitemap: https://khabargaon.com/api/sitemaps/global/videos.xml
-Sitemap: https://khabargaon.com/api/google-news/newssitemap.xml
