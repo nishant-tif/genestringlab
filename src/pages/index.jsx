@@ -9,6 +9,7 @@ import LabTour from "../components/LabTour";
 import WhyGenestring from "../components/WhyGenestring";
 import GeneticServices from "../components/GeneticServices";
 import HeroSection from "@/components/HeroSection";
+import LocationMap from "@/components/LocationMap";
 
 export default function Home({ topStories, trendingNews, dataMar, catData }) {
   return (
@@ -20,6 +21,7 @@ export default function Home({ topStories, trendingNews, dataMar, catData }) {
       <LaboratoryInstruments />
 
       <BookConsultation />
+      <LocationMap />
       <Testimonials />
       <BlogsSection />
     </Layout>
