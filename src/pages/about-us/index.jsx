@@ -11,10 +11,12 @@ import TeamDetails from "@/components/TeamDetails";
 import Mission from "@/components/Mission";
 import Services from "@/components/Services";
 import SetApart from "@/components/SetApart";
+import Aboutbanner from "@/components/Aboutbanner";
 
 export default function GeneticTesting() {
   return (
     <Layout>
+      <Aboutbanner />
       <Mission />
       <SetApart />
       <Services />
