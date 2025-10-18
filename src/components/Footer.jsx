@@ -80,6 +80,7 @@ const Footer = () => {
               sx={{
                 width: { xs: "100%", sm: "360px" },
                 height: "46px",
+                color: "black",
                 "& .MuiOutlinedInput-root": {
                   backgroundColor: "white",
                   height: "46px",
@@ -210,7 +211,8 @@ const Footer = () => {
                   component="a"
                   href="#"
                   sx={{
-                    color: "#333333",
+                    color: "#1A1A1ACC",
+
                     textDecoration: "none",
                     fontSize: "16px",
                     fontWeight: 500,
@@ -223,9 +225,10 @@ const Footer = () => {
                   component="a"
                   href="#"
                   sx={{
-                    color: "#333333",
+                    color: "#1A1A1ACC",
+
                     textDecoration: "none",
-                    fontSize: "16px",
+                    fontSize: "14px",
                     fontWeight: 500,
                     "&:hover": { color: "#15876B" },
                   }}
@@ -236,9 +239,10 @@ const Footer = () => {
                   component="a"
                   href="#"
                   sx={{
-                    color: "#333333",
+                    color: "#1A1A1ACC",
+
                     textDecoration: "none",
-                    fontSize: "16px",
+                    fontSize: "14px",
                     fontWeight: 500,
                     "&:hover": { color: "#15876B" },
                   }}
@@ -249,9 +253,10 @@ const Footer = () => {
                   component="a"
                   href="#"
                   sx={{
-                    color: "#333333",
+                    color: "#1A1A1ACC",
+
                     textDecoration: "none",
-                    fontSize: "16px",
+                    fontSize: "14px",
                     fontWeight: 500,
                     "&:hover": { color: "#15876B" },
                   }}
@@ -262,9 +267,10 @@ const Footer = () => {
                   component="a"
                   href="#"
                   sx={{
-                    color: "#333333",
+                    color: "#1A1A1ACC",
+
                     textDecoration: "none",
-                    fontSize: "16px",
+                    fontSize: "14px",
                     fontWeight: 500,
                     "&:hover": { color: "#15876B" },
                   }}
@@ -275,9 +281,10 @@ const Footer = () => {
                   component="a"
                   href="#"
                   sx={{
-                    color: "#333333",
+                    color: "#1A1A1ACC",
+
                     textDecoration: "none",
-                    fontSize: "16px",
+                    fontSize: "14px",
                     textWrap: "nowrap",
                     fontWeight: 500,
                     "&:hover": { color: "#15876B" },
@@ -289,10 +296,11 @@ const Footer = () => {
                   component="a"
                   href="#"
                   sx={{
-                    color: "#333333",
+                    color: "#1A1A1ACC",
+
                     textDecoration: "none",
                     textWrap: "nowrap",
-                    fontSize: "16px",
+                    fontSize: "14px",
                     fontWeight: 500,
                     "&:hover": { color: "#15876B" },
                   }}
@@ -303,9 +311,9 @@ const Footer = () => {
                   component="a"
                   href="#"
                   sx={{
-                    color: "#333333",
+                    color: "#1A1A1ACC",
                     textDecoration: "none",
-                    fontSize: "16px",
+                    fontSize: "14px",
                     fontWeight: 500,
                     "&:hover": { color: "#15876B" },
                   }}
@@ -367,10 +375,31 @@ const Footer = () => {
               <Box
                 sx={{
                   display: "flex",
-                  gap: { xs: 2, md: 3 },
+                  gap: { xs: 2, md: 1 },
                   justifyContent: { xs: "center", md: "flex-end" },
                 }}
               >
+                {/* Facebook */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    cursor: "pointer",
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      transform: "scale(1.1)",
+                    },
+                  }}
+                >
+                  <Image
+                    src="/images/facebook.svg"
+                    alt="Facebook"
+                    width={32}
+                    height={32}
+                    style={{ objectFit: "contain" }}
+                  />
+                </Box>
                 {/* YouTube */}
                 <Box
                   sx={{
@@ -387,8 +416,8 @@ const Footer = () => {
                   <Image
                     src="/images/youtube.png"
                     alt="YouTube"
-                    width={28}
-                    height={28}
+                    width={32}
+                    height={32}
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
@@ -409,8 +438,8 @@ const Footer = () => {
                   <Image
                     src="/images/twitter.png"
                     alt="Twitter"
-                    width={28}
-                    height={28}
+                    width={32}
+                    height={32}
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
@@ -431,8 +460,8 @@ const Footer = () => {
                   <Image
                     src="/images/linkedin.png"
                     alt="LinkedIn"
-                    width={28}
-                    height={28}
+                    width={32}
+                    height={32}
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
@@ -453,8 +482,8 @@ const Footer = () => {
                   <Image
                     src="/images/insta.png"
                     alt="Instagram"
-                    width={28}
-                    height={28}
+                    width={32}
+                    height={32}
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
