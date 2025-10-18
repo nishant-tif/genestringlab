@@ -9,7 +9,6 @@ import {
   useTheme,
   useMediaQuery,
 } from "@mui/material";
-import { KeyboardArrowRight } from "@mui/icons-material";
 
 const BlogsSection = () => {
   const theme = useTheme();
@@ -39,18 +38,32 @@ const BlogsSection = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#F4F1EB",
+        backgroundColor: "#ffffff",
         padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
+        position: "relative",
       }}
     >
-      <Container maxWidth="xl">
+      {/* Beige Background Layer - covers header and 80% of cards */}
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: "calc(100% - 27%)",
+          backgroundColor: "#F4F1EB",
+          zIndex: 0,
+        }}
+      />
+
+      <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
         {/* Header Section */}
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             alignItems: "flex-start",
-            marginBottom: { xs: "32px", md: "40px" },
+            marginBottom: { xs: "28px", md: "30px" },
             flexDirection: { xs: "column", md: "row" },
             gap: { xs: 3, md: 0 },
             px: { xs: 2, md: 0 },
@@ -100,16 +113,35 @@ const BlogsSection = () => {
               },
             }}
           >
-            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-              <Typography sx={{ fontSize: "14px", lineHeight: 1 }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 0.75 }}>
+              <Typography
+                sx={{ fontSize: "16px", lineHeight: 1, fontWeight: 500 }}
+              >
                 All
               </Typography>
-              <Typography sx={{ fontSize: "14px", lineHeight: 1 }}>
+              <Typography
+                sx={{ fontSize: "16px", lineHeight: 1, fontWeight: 500 }}
+              >
                 Articles
               </Typography>
-              <Typography sx={{ fontSize: "12px", lineHeight: 1 }}>
-                ›
-              </Typography>
+              <Box
+                sx={{
+                  position: "relative",
+                  width: "16px",
+                  height: "16px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  src="/images/right.svg"
+                  alt="Arrow"
+                  width={16}
+                  height={16}
+                  style={{ objectFit: "contain" }}
+                />
+              </Box>
             </Box>
           </Button>
         </Box>
@@ -132,8 +164,6 @@ const BlogsSection = () => {
                     overflow: "hidden",
                     boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
                     position: "relative",
-                    zIndex: 1,
-                    height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     border: "2px solid white",
@@ -143,10 +173,13 @@ const BlogsSection = () => {
                   <Box
                     sx={{
                       position: "relative",
-                      width: "100%",
-                      height: { xs: "200px", md: "250px" },
+
+                      height: { xs: "200px", md: "240px" },
                       overflow: "hidden",
-                      borderRadius: { xs: "6px 6px 0 0", md: "10px 10px 0 0" },
+                      borderRadius: {
+                        xs: "6px 6px 0 0",
+                        md: "10px 10px 0 0",
+                      },
                     }}
                   >
                     <Image
