@@ -7,7 +7,7 @@ const TestProcess = () => {
     <Box
       sx={{
         backgroundColor: "#FFFFFF",
-        padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
+        padding: { xs: "40px 0", md: "80px 0", lg: "80px 0" },
       }}
     >
       <Container maxWidth="lg">
@@ -23,7 +23,7 @@ const TestProcess = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 700,
-              fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
+              fontSize: { xs: "28px", sm: "28px", md: "32px", lg: "32px" },
               lineHeight: "1.2",
               color: "#000000",
             }}
@@ -80,8 +80,8 @@ const TestProcess = () => {
               fontFamily: "Onest",
               fontWeight: 400,
               fontSize: { xs: "14px", md: "15px", lg: "16px" },
-              lineHeight: "1.7",
-              color: "#555555",
+              lineHeight: "1.4",
+              color: "#1A1A1AB2",
               maxWidth: "1100px",
               margin: "0 auto",
             }}

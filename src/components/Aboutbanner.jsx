@@ -45,7 +45,7 @@ const Aboutbanner = () => {
               className="onest-400"
               sx={{
                 fontSize: { xs: "16px", md: "20px" },
-                lineHeight: "1.8",
+                lineHeight: "1.7",
                 color: "#333333",
                 marginBottom: { xs: "20px", md: "24px" },
               }}
@@ -55,7 +55,7 @@ const Aboutbanner = () => {
               <Box
                 component="span"
                 className="onest-700"
-                sx={{ color: "#000000" }}
+                sx={{ color: "#000000", lineHeight: "1.6" }}
               >
                 NABL-accredited
               </Box>
@@ -63,7 +63,7 @@ const Aboutbanner = () => {
               <Box
                 component="span"
                 className="onest-700"
-                sx={{ color: "#000000" }}
+                sx={{ color: "#000000", lineHeight: "1.6" }}
               >
                 ISO 15189:2022 certified
               </Box>
@@ -71,7 +71,7 @@ const Aboutbanner = () => {
               <Box
                 component="span"
                 className="onest-700"
-                sx={{ color: "#000000" }}
+                sx={{ color: "#000000", lineHeight: "1.6" }}
               >
                 PCPNDT registered
               </Box>

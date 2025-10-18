@@ -7,7 +7,7 @@ const Commitment = () => {
     <Box
       sx={{
         backgroundColor: "#FFFFFF",
-        padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
+        padding: { xs: "20px 0", md: "30px 0", lg: "40px 0" },
       }}
     >
       <Container maxWidth="lg">
@@ -19,27 +19,28 @@ const Commitment = () => {
             alignItems: "center",
             gap: { xs: "40px", md: "50px", lg: "50px" },
             mx: { xs: 2, md: 0 },
+            marginBottom: "80px",
           }}
         >
-          {/* Left Side - Image with Beige Background */}
+          {/* Left Side - Image */}
           <Box
             sx={{
-              flex: { xs: "0 0 auto", md: "0 0 35%" },
-              width: { xs: "100%", md: "35%" },
-              maxWidth: { xs: "400px", md: "none" },
-              backgroundColor: "#F8F6F2",
-              borderRadius: "24px",
-              padding: { xs: "40px 30px", sm: "50px 40px", md: "50px" },
+              flex: { xs: "0 0 auto", md: "0 0 40%" },
+              width: { xs: "100%", md: "40%" },
+              maxWidth: { xs: "500px", md: "none" },
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              backgroundColor: "#f9f2e4",
+              borderRadius: "24px",
+              padding: { xs: "40px 30px", sm: "50px 40px", md: "60px 50px" },
             }}
           >
             <Box
               sx={{
                 position: "relative",
                 width: "100%",
-                height: { xs: "280px", sm: "320px", md: "300px" },
+                height: { xs: "300px", sm: "300px", md: "300px", lg: "300px" },
               }}
             >
               <Image
@@ -66,7 +67,7 @@ const Commitment = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 700,
-                fontSize: { xs: "26px", sm: "30px", md: "34px", lg: "38px" },
+                fontSize: { xs: "26px", sm: "28px", md: "32px", lg: "32px" },
                 lineHeight: "1.2",
                 color: "#000000",
               }}
@@ -79,9 +80,9 @@ const Commitment = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 400,
-                fontSize: { xs: "15px", md: "16px" },
-                lineHeight: "1.7",
-                color: "#333333",
+                fontSize: { xs: "15px", md: "18px" },
+                lineHeight: "1.5",
+                color: "#1A1A1A",
               }}
             >
               At Genestrings Lab, we bring together advanced genetic technology
@@ -97,9 +98,9 @@ const Commitment = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 400,
-                fontSize: { xs: "15px", md: "16px" },
-                lineHeight: "1.7",
-                color: "#333333",
+                fontSize: { xs: "15px", md: "18px" },
+                lineHeight: "1.5",
+                color: "#1A1A1A",
               }}
             >
               From fertility to prenatal care and beyond, our precise

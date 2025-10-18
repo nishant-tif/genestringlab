@@ -44,7 +44,7 @@ const GetTested = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#F8F6F2",
+        backgroundColor: "#f4f9f4",
         padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
       }}
     >
@@ -62,7 +62,7 @@ const GetTested = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 700,
-              fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
+              fontSize: { xs: "28px", sm: "28px", md: "34px", lg: "34px" },
               lineHeight: "1.2",
               color: "#000000",
               marginBottom: { xs: "16px", md: "20px" },
@@ -76,7 +76,7 @@ const GetTested = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 400,
-              fontSize: { xs: "14px", md: "16px" },
+              fontSize: { xs: "14px", md: "18px" },
               lineHeight: "1.6",
               color: "#333333",
               maxWidth: "900px",
@@ -142,7 +142,7 @@ const GetTested = () => {
                     flex: 1,
                     display: "flex",
                     flexDirection: "column",
-                    gap: { xs: "8px", md: "12px" },
+                    gap: { xs: "8px", md: "8px" },
                   }}
                 >
                   {/* Title */}
@@ -150,9 +150,9 @@ const GetTested = () => {
                     sx={{
                       fontFamily: "Onest",
                       fontWeight: 600,
-                      fontSize: { xs: "18px", md: "20px" },
+                      fontSize: { xs: "18px", md: "18px" },
                       lineHeight: "1.3",
-                      color: "#15876B",
+                      color: "#7EBF69",
                     }}
                   >
                     {stage.title}
@@ -164,7 +164,7 @@ const GetTested = () => {
                       fontFamily: "Onest",
                       fontWeight: 400,
                       fontSize: { xs: "14px", md: "16px" },
-                      lineHeight: "1.6",
+                      lineHeight: "1.4",
                       color: "#333333",
                     }}
                   >
@@ -202,7 +202,7 @@ const GetTested = () => {
               fontWeight: 400,
               fontSize: { xs: "13px", md: "14px" },
               lineHeight: "1.6",
-              color: "#666666",
+              color: "#1A1A1A99",
               fontStyle: "italic",
               maxWidth: "900px",
               margin: "0 auto",

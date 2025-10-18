@@ -4,64 +4,65 @@ import Image from "next/image";
 
 const GeneticHeroSection = () => {
   return (
-    <>
-      {/* Background Section with Image - 265px height */}
+    <Box
+      sx={{
+        position: "relative",
+        width: "100%",
+        paddingBottom: { xs: "40px", md: "60px" },
+      }}
+    >
+      {/* Background Section with Image */}
       <Box
         sx={{
           position: "relative",
-
-          height: "265px",
+          height: { xs: "300px", md: "350px" },
           overflow: "hidden",
         }}
       >
         {/* Background Pattern Image */}
-        <Box
-          sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            zIndex: 0,
-          }}
-        >
-          <Image
-            src="/images/geneticbanner.svg"
-            alt="Genetic Testing Background"
-            fill
-            style={{ objectFit: "cover" }}
-            priority
-          />
-        </Box>
+        <Image
+          src="/images/geneticbanner.svg"
+          alt="Genetic Testing Background"
+          fill
+          style={{ objectFit: "cover" }}
+          priority
+        />
       </Box>
 
-      {/* White Content Box - Exact Figma Specs */}
-      <Box
-        sx={{
-          position: "relative",
-          marginTop: { xs: "-60px", md: "-50px" }, // Overlap from background
-          paddingBottom: { xs: "40px", md: "60px" },
-          paddingX: { xs: 2, md: 0 },
-        }}
-      >
-        <Container maxWidth="xl">
+      {/* Overlayed Content Card with Fade */}
+      <Container maxWidth="xl">
+        <Box
+          sx={{
+            position: "relative",
+            marginTop: { xs: "-60px", md: "-70px" },
+            zIndex: 10,
+            paddingX: { xs: 2, md: 4 },
+          }}
+        >
           <Box
             sx={{
               position: "relative",
-              zIndex: 1,
-              backgroundColor: "#f8f6f2",
-              width: { xs: "100%", md: "1100px" },
-              height: "265px",
-              borderTopLeftRadius: "42px",
-              borderTopRightRadius: "42px",
-              borderBottomLeftRadius: "0px",
-              borderBottomRightRadius: "0px",
-              padding: "38px 81px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "16px",
-              boxShadow: "0 10px 40px rgba(0, 0, 0, 0.15)",
+              backgroundColor: "#fcfbf9",
+              borderRadius: "32px",
+              padding: { xs: "40px 32px 60px", md: "50px 80px 80px" },
+              maxWidth: "1200px",
               margin: "0 auto",
+              // boxShadow: "0 10px 40px rgba(0, 0, 0, 0.1)",
+
+              // Gradient fade effect at bottom
+              "&::after": {
+                content: '""',
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                right: 0,
+                height: "120px",
+                background:
+                  "linear-gradient(to bottom, rgba(252, 251, 249, 0) 0%, rgba(252, 251, 249, 0.5) 50%, rgba(252, 251, 249, 0.9) 100%)",
+                borderBottomLeftRadius: "32px",
+                borderBottomRightRadius: "32px",
+                pointerEvents: "none",
+              },
             }}
           >
             {/* Title */}
@@ -69,10 +70,11 @@ const GeneticHeroSection = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 700,
-                fontSize: { xs: "32px", sm: "36px", md: "42px", lg: "48px" },
+                fontSize: { xs: "32px", sm: "36px", md: "40px" },
                 lineHeight: "1.2",
                 color: "#000000",
                 textAlign: "center",
+                marginBottom: { xs: "24px", md: "28px" },
               }}
             >
               What is Genetic Testing?
@@ -83,10 +85,11 @@ const GeneticHeroSection = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 400,
-                fontSize: { xs: "16px", md: "17px", lg: "18px" },
-                lineHeight: "1.7",
+                fontSize: { xs: "15px", md: "16px" },
+                lineHeight: "1.5",
                 color: "#333333",
                 textAlign: "center",
+                marginBottom: { xs: "20px", md: "24px" },
               }}
             >
               Genetic testing is an advanced medical process that examines your
@@ -103,8 +106,8 @@ const GeneticHeroSection = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 400,
-                fontSize: { xs: "16px", md: "17px", lg: "18px" },
-                lineHeight: "1.7",
+                fontSize: { xs: "15px", md: "16px" },
+                lineHeight: "1.5",
                 color: "#333333",
                 textAlign: "center",
               }}
@@ -115,9 +118,9 @@ const GeneticHeroSection = () => {
               charge of your long-term health and well-being.
             </Typography>
           </Box>
-        </Container>
-      </Box>
-    </>
+        </Box>
+      </Container>
+    </Box>
   );
 };
 

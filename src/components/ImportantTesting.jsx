@@ -57,7 +57,7 @@ const ImportantTesting = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 700,
-              fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
+              fontSize: { xs: "24px", sm: "28px", md: "32px", lg: "32px" },
               lineHeight: "1.2",
               color: "#000000",
               marginBottom: { xs: "16px", md: "10px" },
@@ -71,7 +71,7 @@ const ImportantTesting = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 400,
-              fontSize: { xs: "15px", md: "16px" },
+              fontSize: { xs: "15px", md: "18px" },
               lineHeight: "1.7",
               color: "#333333",
               maxWidth: "1200px",
@@ -94,9 +94,12 @@ const ImportantTesting = () => {
               sm: "repeat(2, 1fr)",
               md: "repeat(3, 1fr)",
             },
-            gap: "32px",
+            gap: { xs: "16px", md: "20px" },
             marginBottom: { xs: "32px", md: "40px" },
-            px: { xs: 2, md: 0 },
+            px: { xs: 1, md: 0 },
+            maxWidth: "1500px",
+            margin: "0 auto",
+            marginBottom: { xs: "32px", md: "40px" },
           }}
         >
           {benefits.map((benefit) => (
@@ -105,14 +108,14 @@ const ImportantTesting = () => {
               sx={{
                 backgroundColor: "#FFFFFF",
                 borderRadius: "16px",
-                padding: "20px",
+                padding: { xs: "18px 20px", md: "20px 28px" },
                 display: "flex",
                 flexDirection: "row",
-                gap: "20px",
-                alignItems: "flex-start",
+                gap: "18px",
+                alignItems: "center",
                 border: "1px solid #E8E5DE",
-                width: { xs: "100%", md: "320px" },
-                height: "80px",
+                minHeight: { xs: "100px", md: "105px" },
+                maxHeight: { xs: "115px", md: "115px" },
                 transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 "&:hover": {
                   transform: "translateY(-4px)",
@@ -123,7 +126,7 @@ const ImportantTesting = () => {
                   gridColumn: { xs: "auto", md: "1 / 2" },
                 }),
                 ...(benefit.id === 5 && {
-                  gridColumn: { xs: "auto", md: "2 / 4" },
+                  gridColumn: { xs: "auto", md: "2 / 3" },
                 }),
               }}
             >
@@ -162,7 +165,7 @@ const ImportantTesting = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 400,
-                  fontSize: { xs: "15px", md: "16px" },
+                  fontSize: { xs: "15px", md: "14px" },
                   lineHeight: "1.6",
                   color: "#333333",
                   flex: 1,
@@ -177,22 +180,26 @@ const ImportantTesting = () => {
         {/* Bottom Note */}
         <Box
           sx={{
-            textAlign: "left",
-            px: { xs: 2, md: 2 },
-
-            ml: { xs: 2, md: 4 },
+            textAlign: "center",
+            px: { xs: 2, md: 0 },
+            maxWidth: "1300px",
+            margin: "0 auto",
           }}
         >
           <Typography
             sx={{
               fontFamily: "Onest",
+              display: "flex",
+              justifyContent: "flex-start",
               fontWeight: 400,
-              fontSize: { xs: "14px", md: "15px" },
+              fontSize: { xs: "14px", md: "14px" },
               lineHeight: "1.7",
               color: "#666666",
               fontStyle: "italic",
-              maxWidth: "1100px",
-              margin: "0 auto",
+              background: "#F8F6F240",
+              border: "1.5px dashed #00000014",
+              borderRadius: "12px",
+              padding: { xs: "8px 10px", md: "10px 12px" },
             }}
           >
             In many cases, early genetic insights mean earlier intervention,

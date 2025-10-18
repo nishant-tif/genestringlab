@@ -62,7 +62,7 @@ const TeamDetails = () => {
               sx={{
                 position: "absolute",
                 top: "-52px",
-                left: { xs: "20px", md: "175px" },
+                left: { xs: "20px", md: "80px", lg: "100px" },
                 width: { xs: "90%", md: "573px" },
                 height: { xs: "350px", md: "384px" },
                 borderRadius: "24px",
@@ -84,7 +84,7 @@ const TeamDetails = () => {
               sx={{
                 position: "absolute",
                 top: "65.5px",
-                left: { xs: "20px", md: "780px" },
+                left: { xs: "20px", md: "685px", lg: "705px" },
                 width: { xs: "calc(100% - 40px)", md: "521px" },
                 display: "flex",
                 flexDirection: "column",
@@ -138,8 +138,10 @@ const TeamDetails = () => {
                 sm: "repeat(2, 1fr)",
                 md: "repeat(4, 1fr)",
               },
-              gap: { xs: "40px", md: "32px" },
-              px: { xs: 2, md: 4 },
+              gap: { xs: "40px", md: "24px" },
+              px: { xs: 2, sm: 4, md: 8, lg: 12 },
+              maxWidth: "1400px",
+              margin: "0 auto",
             }}
           >
             {teamMembers.map((member) => (
@@ -240,7 +242,10 @@ const TeamDetails = () => {
               borderRadius: "24px",
               padding: { xs: "40px 30px", sm: "50px 60px", md: "60px 80px" },
               textAlign: "center",
-              mx: { xs: 2, md: 4 },
+              mx: { xs: 2, sm: 4, md: 8, lg: 12 },
+              maxWidth: "1400px",
+              marginLeft: "auto",
+              marginRight: "auto",
             }}
           >
             <Typography

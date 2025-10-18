@@ -143,10 +143,14 @@ const ConsiderTesting = () => {
               sm: "repeat(2, 1fr)",
               md: "repeat(3, 1fr)",
             },
-            gap: { xs: "100px 30px", md: "120px 40px" },
-            px: { xs: 2, md: 0 },
+            gap: { xs: "100px 24px", md: "120px 32px" },
+            px: { xs: 2, md: 4, lg: 6 },
             marginBottom: { xs: "40px", md: "60px" },
             marginTop: { xs: "100px", md: "120px" },
+            maxWidth: "1400px",
+            margin: "0 auto",
+            marginTop: { xs: "100px", md: "120px" },
+            marginBottom: { xs: "40px", md: "60px" },
           }}
         >
           {/* First Card - Text Only with Dashed Border */}
@@ -154,22 +158,23 @@ const ConsiderTesting = () => {
             sx={{
               backgroundColor: "#FEFEFD",
               borderRadius: "20px",
-              padding: { xs: "40px 32px", md: "50px 20px" },
+              padding: { xs: "40px 32px", md: "40px 36px" },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
               textAlign: "center",
-              border: "2px dashed #eeeeed",
-              height: { xs: "auto", md: "90px" },
+              border: "2px dashed #E8E5DE",
+              minHeight: { xs: "auto", md: "200px" },
+              height: { md: "200px" },
             }}
           >
             <Typography
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 400,
-                fontSize: { xs: "17px", md: "19px", lg: "20px" },
-                lineHeight: "1.7",
+                fontSize: { xs: "12px", md: "16px", lg: "16px" },
+                lineHeight: "1.4",
                 color: "#333333",
               }}
             >
@@ -188,14 +193,14 @@ const ConsiderTesting = () => {
                 backgroundColor: "#F8F6F2",
                 borderRadius: "20px",
                 paddingTop: { xs: "90px", md: "100px" },
-                paddingBottom: { xs: "32px", md: "36px" },
-                paddingX: { xs: "24px", md: "28px" },
+                paddingBottom: { xs: "36px", md: "32px" },
+                paddingX: { xs: "28px", md: "32px" },
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 textAlign: "center",
                 border: "1px solid #E8E5DE",
-                height: { xs: "auto", md: "60px" },
+                height: { md: "200px" },
                 transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 "&:hover": {
                   transform: "translateY(-6px)",
