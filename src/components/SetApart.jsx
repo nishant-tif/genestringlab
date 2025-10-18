@@ -72,9 +72,8 @@ const SetApart = () => {
         >
           {/* Title */}
           <Typography
+            className="onest-700"
             sx={{
-              fontFamily: "Onest",
-              fontWeight: 700,
               fontSize: { xs: "32px", sm: "36px", md: "48px" },
               lineHeight: "1.3",
               color: "#000000",
@@ -163,9 +162,8 @@ const SetApart = () => {
                   >
                     {/* Number */}
                     <Typography
+                      className="onest-400"
                       sx={{
-                        fontFamily: "Onest",
-                        fontWeight: 400,
                         fontSize: "14px",
                         lineHeight: "1.3",
                         color: "#666666",
@@ -176,9 +174,8 @@ const SetApart = () => {
 
                     {/* Title */}
                     <Typography
+                      className="onest-600"
                       sx={{
-                        fontFamily: "Onest",
-                        fontWeight: 600,
                         fontSize: { xs: "18px", md: "20px" },
                         lineHeight: "1.3",
                         color: "#000000",
@@ -285,9 +282,8 @@ const SetApart = () => {
                   >
                     {/* Number */}
                     <Typography
+                      className="onest-400"
                       sx={{
-                        fontFamily: "Onest",
-                        fontWeight: 400,
                         fontSize: "14px",
                         lineHeight: "1.3",
                         color: "#666666",
@@ -298,9 +294,8 @@ const SetApart = () => {
 
                     {/* Title */}
                     <Typography
+                      className="onest-600"
                       sx={{
-                        fontFamily: "Onest",
-                        fontWeight: 600,
                         fontSize: { xs: "18px", md: "20px" },
                         lineHeight: "1.3",
                         color: "#000000",

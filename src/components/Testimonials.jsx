@@ -63,15 +63,15 @@ const Testimonials = () => {
     <Box
       sx={{
         backgroundColor: "#ffffff",
-        padding: { xs: "40px 0", md: "60px 0" },
+        padding: { xs: "40px ", md: "80px 40px" },
       }}
     >
       <Container maxWidth="xl">
         <Box
           sx={{
-            backgroundColor: "#F8F6F2",
-            borderRadius: { xs: "16px", md: "24px" },
-            padding: { xs: "30px 20px", md: "50px 80px" },
+            backgroundColor: "#FCF2EB",
+            borderRadius: { xs: "12px", md: "12px" },
+            padding: { xs: "30px 20px", md: "50px 40px" },
             position: "relative",
             mx: { xs: 2, md: 0 },
           }}
@@ -84,7 +84,7 @@ const Testimonials = () => {
               right: { xs: "20px", md: "40px" },
               display: "flex",
               alignItems: "center",
-              gap: { xs: "12px", md: "16px" },
+              gap: { xs: "12px", md: "12px" },
             }}
           >
             <IconButton
@@ -92,7 +92,7 @@ const Testimonials = () => {
               sx={{
                 width: { xs: "32px", md: "40px" },
                 height: { xs: "32px", md: "40px" },
-                border: "1px solid #333333",
+
                 borderRadius: "8px",
                 backgroundColor: "transparent",
                 "&:hover": {
@@ -121,7 +121,7 @@ const Testimonials = () => {
               sx={{
                 width: { xs: "32px", md: "40px" },
                 height: { xs: "32px", md: "40px" },
-                border: "1px solid #333333",
+
                 borderRadius: "8px",
                 backgroundColor: "transparent",
                 "&:hover": {
@@ -162,10 +162,10 @@ const Testimonials = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 700,
-                  fontSize: { xs: "24px", sm: "32px", md: "40px" },
+                  fontSize: { xs: "24px", sm: "32px", md: "34px" },
                   lineHeight: "1.2",
                   color: "#333333",
-                  marginBottom: { xs: "12px", md: "24px" },
+                  marginBottom: { xs: "12px", md: "18px", lg: "18px" },
                 }}
               >
                 What Our Customers Are Saying About Us
@@ -175,9 +175,9 @@ const Testimonials = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 400,
-                  fontSize: { xs: "14px", md: "16px" },
-                  lineHeight: "1.6",
-                  color: "#666666",
+                  fontSize: { xs: "14px", md: "20px" },
+                  lineHeight: "1.3",
+                  color: "#1A1A1A",
                 }}
               >
                 Want to know more about what our customers love about us.
@@ -202,27 +202,25 @@ const Testimonials = () => {
               {/* Quote Icon */}
               <Box
                 sx={{
-                  marginBottom: { xs: "8px", md: "16px" },
+                  marginBottom: { xs: "8px", md: "12px" },
+                  position: "relative",
+                  width: { xs: "30px", md: "40px" },
+                  height: { xs: "30px", md: "40px" },
                 }}
               >
-                <Typography
-                  sx={{
-                    fontFamily: "Georgia, serif",
-                    fontSize: { xs: "48px", md: "64px" },
-                    color: "#D4AF37",
-                    lineHeight: 1,
-                    fontWeight: 700,
-                  }}
-                >
-                  "
-                </Typography>
+                <Image
+                  src="/images/quote.svg"
+                  alt="Quote"
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
               </Box>
 
               {/* Testimonial Text */}
               <Typography
                 sx={{
                   fontFamily: "Onest",
-                  fontWeight: 400,
+                  fontWeight: 500,
                   fontSize: { xs: "14px", md: "16px" },
                   lineHeight: "1.6",
                   color: "#333333",
@@ -275,8 +273,8 @@ const Testimonials = () => {
                 {/* User Image */}
                 <Box
                   sx={{
-                    width: { xs: "48px", md: "56px" },
-                    height: { xs: "48px", md: "56px" },
+                    width: { xs: "44px", md: "48px" },
+                    height: { xs: "44px", md: "48px" },
                     borderRadius: "50%",
                     overflow: "hidden",
                     position: "relative",
@@ -296,7 +294,7 @@ const Testimonials = () => {
                     sx={{
                       fontFamily: "Onest",
                       fontWeight: 600,
-                      fontSize: { xs: "16px", md: "18px" },
+                      fontSize: { xs: "14px", md: "16px" },
                       color: "#333333",
                       lineHeight: 1.4,
                     }}

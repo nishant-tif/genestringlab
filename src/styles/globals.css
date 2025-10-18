@@ -39,6 +39,37 @@ body {
   padding: 0;
 }
 
+/* Onest Font Utility Classes */
+.onest-400 {
+  font-family: var(--font-onest) !important;
+  font-weight: 400 !important;
+}
+
+.onest-500 {
+  font-family: var(--font-onest) !important;
+  font-weight: 500 !important;
+}
+
+.onest-600 {
+  font-family: var(--font-onest) !important;
+  font-weight: 600 !important;
+}
+
+.onest-700 {
+  font-family: var(--font-onest) !important;
+  font-weight: 700 !important;
+}
+
+.onest-800 {
+  font-family: var(--font-onest) !important;
+  font-weight: 800 !important;
+}
+
+.onest-900 {
+  font-family: var(--font-onest) !important;
+  font-weight: 900 !important;
+}
+
 /* Material-UI adjustments for header components */
 .MuiContainer-root {
   padding-left: 16px;

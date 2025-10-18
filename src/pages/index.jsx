@@ -13,18 +13,19 @@ import LocationMap from "@/components/LocationMap";
 
 export default function Home({ topStories, trendingNews, dataMar, catData }) {
   return (
-    <Layout>
+    <>
       <HeroSection />
       <GeneticServices />
-      <WhyGenestring />
       <LabTour />
+      <WhyGenestring />
+
       <LaboratoryInstruments />
 
       <BookConsultation />
       <LocationMap />
       <Testimonials />
       <BlogsSection />
-    </Layout>
+    </>
   );
 }
 

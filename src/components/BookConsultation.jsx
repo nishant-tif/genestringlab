@@ -42,7 +42,7 @@ const BookConsultation = () => {
               width: { xs: "100%", sm: "90%", md: "680px" },
               height: { xs: "300px", sm: "400px", md: "450px" },
               position: "relative",
-              borderRadius: { xs: "16px", md: "24px" },
+              borderRadius: { xs: "12px", md: "12px" },
               overflow: "hidden",
             }}
           >
@@ -112,7 +112,7 @@ const BookConsultation = () => {
                     sx={{
                       fontFamily: "Onest",
                       fontWeight: 500,
-                      fontSize: { xs: "16px", md: "18px", lg: "20px" },
+                      fontSize: { xs: "16px", md: "18px", lg: "18px" },
                       lineHeight: "1.4",
                       color: "#333333",
                       flex: 1,
@@ -123,8 +123,8 @@ const BookConsultation = () => {
 
                   <Box
                     sx={{
-                      width: { xs: "32px", md: "40px" },
-                      height: { xs: "32px", md: "40px" },
+                      width: { xs: "20px", md: "30px" },
+                      height: { xs: "20px", md: "30px" },
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -134,10 +134,10 @@ const BookConsultation = () => {
                     }}
                   >
                     <Image
-                      src="/images/vectorarrow.png"
+                      src="/images/arrowicon.svg"
                       alt="Arrow"
-                      width={28}
-                      height={28}
+                      width={30}
+                      height={30}
                       style={{ objectFit: "contain" }}
                     />
                   </Box>

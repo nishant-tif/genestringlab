@@ -10,14 +10,14 @@ import GeneticHeroSection from "@/components/GeneticHeroSection";
 
 export default function GeneticTesting() {
   return (
-    <Layout>
+    <>
       <GeneticHeroSection />
       <ImportantTesting />
       <ConsiderTesting />
       <GetTested />
       <TestProcess />
       <Commitment />
-    </Layout>
+    </>
   );
 }
 

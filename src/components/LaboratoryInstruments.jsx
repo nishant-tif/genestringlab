@@ -61,11 +61,11 @@ const LaboratoryInstruments = () => {
           sx={{
             fontFamily: "Onest",
             fontWeight: 700,
-            fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
+            fontSize: { xs: "28px", sm: "32px", md: "38px", lg: "38px" },
             lineHeight: "1.2",
             color: "#000000",
             textAlign: "center",
-            marginBottom: { xs: "40px", md: "60px" },
+            marginBottom: { xs: "40px", md: "40px" },
             px: { xs: 2, md: 0 },
           }}
         >

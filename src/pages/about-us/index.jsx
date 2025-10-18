@@ -15,13 +15,13 @@ import Aboutbanner from "@/components/Aboutbanner";
 
 export default function GeneticTesting() {
   return (
-    <Layout>
+    <>
       <Aboutbanner />
       <Mission />
       <SetApart />
       <Services />
       <TeamDetails />
-    </Layout>
+    </>
   );
 }
 

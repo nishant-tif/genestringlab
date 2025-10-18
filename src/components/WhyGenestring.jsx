@@ -16,7 +16,7 @@ const WhyGenestringCards = () => {
           sx={{
             fontFamily: "Onest",
             fontWeight: 700,
-            fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
+            fontSize: { xs: "28px", sm: "32px", md: "32px", lg: "32px" },
             lineHeight: "1.2",
             color: "#000000",
             textAlign: "center",
@@ -51,8 +51,8 @@ const WhyGenestringCards = () => {
           <Box>
             <Box
               sx={{
-                width: { xs: "100%", sm: "400px" },
-                maxWidth: "400px",
+                width: { xs: "100%", sm: "440px", md: "440px" },
+                // maxWidth: "450px",
                 height: "auto",
                 minHeight: { xs: "auto", sm: "117px" },
                 backgroundColor: "#E8F4F1",
@@ -96,7 +96,7 @@ const WhyGenestringCards = () => {
                   sx={{
                     fontFamily: "Onest",
                     fontWeight: 600,
-                    fontSize: "22px",
+                    fontSize: "20px",
                     lineHeight: "1.3",
                     color: "#000000",
                     marginBottom: "12px",
@@ -123,8 +123,8 @@ const WhyGenestringCards = () => {
           <Box>
             <Box
               sx={{
-                width: { xs: "100%", sm: "400px" },
-                maxWidth: "400px",
+                width: { xs: "100%", sm: "440px", md: "440px" },
+                // maxWidth: "450px",
                 height: "auto",
                 minHeight: { xs: "auto", sm: "117px" },
                 backgroundColor: "#E8F4F1",
@@ -168,7 +168,7 @@ const WhyGenestringCards = () => {
                   sx={{
                     fontFamily: "Onest",
                     fontWeight: 600,
-                    fontSize: "22px",
+                    fontSize: "20px",
                     lineHeight: "1.3",
                     color: "#000000",
                     marginBottom: "12px",
@@ -195,8 +195,8 @@ const WhyGenestringCards = () => {
           <Box>
             <Box
               sx={{
-                width: { xs: "100%", sm: "400px" },
-                maxWidth: "400px",
+                width: { xs: "100%", sm: "440px", md: "440px" },
+                // maxWidth: "450px",
                 height: "auto",
                 minHeight: { xs: "auto", sm: "117px" },
                 backgroundColor: "#E8F4F1",
@@ -240,7 +240,7 @@ const WhyGenestringCards = () => {
                   sx={{
                     fontFamily: "Onest",
                     fontWeight: 600,
-                    fontSize: "22px",
+                    fontSize: "20px",
                     lineHeight: "1.3",
                     color: "#000000",
                     marginBottom: "12px",
@@ -267,8 +267,8 @@ const WhyGenestringCards = () => {
           <Box>
             <Box
               sx={{
-                width: { xs: "100%", sm: "400px" },
-                maxWidth: "400px",
+                width: { xs: "100%", sm: "440px", md: "440px" },
+                // maxWidth: "450px",
                 height: "auto",
                 minHeight: { xs: "auto", sm: "117px" },
                 backgroundColor: "#E8F4F1",
@@ -312,7 +312,7 @@ const WhyGenestringCards = () => {
                   sx={{
                     fontFamily: "Onest",
                     fontWeight: 600,
-                    fontSize: "22px",
+                    fontSize: "20px",
                     lineHeight: "1.3",
                     color: "#000000",
                     marginBottom: "12px",
@@ -340,7 +340,7 @@ const WhyGenestringCards = () => {
         <Box
           sx={{
             textAlign: "center",
-            padding: { xs: "16px 24px", md: "20px 32px" },
+            padding: { xs: "16px 24px", md: "8px 18px" },
             border: "2px dashed #C8C8C8",
             borderRadius: "12px",
             maxWidth: "fit-content",

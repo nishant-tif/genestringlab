@@ -66,7 +66,7 @@ const GeneticServices = () => {
     <Box
       sx={{
         backgroundColor: "#ffffff",
-        padding: { xs: "40px 0", md: "60px 0", lg: "80px 0" },
+        padding: { xs: "40px 20px", md: "60px 40px", lg: "80px 60px" },
       }}
     >
       <Container maxWidth="xl">
@@ -87,7 +87,7 @@ const GeneticServices = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 700,
-              fontSize: { xs: "28px", sm: "32px", md: "36px", lg: "40px" },
+              fontSize: { xs: "28px", sm: "32px", md: "32px", lg: "32px" },
               lineHeight: "1.2",
               color: "#000000",
               minWidth: { xs: "auto", md: "300px" },
@@ -101,7 +101,7 @@ const GeneticServices = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 400,
-              fontSize: { xs: "14px", md: "16px" },
+              fontSize: { xs: "14px", md: "18px" },
               lineHeight: "1.6",
               color: "#333333",
               maxWidth: { xs: "100%", md: "800px" },
@@ -130,7 +130,8 @@ const GeneticServices = () => {
               md: "repeat(3, 1fr)",
               lg: "repeat(4, 1fr)",
             },
-            gap: { xs: "20px", md: "26px" },
+            columnGap: { xs: "10px", md: "8px", lg: "8px" },
+            rowGap: { xs: "20px", md: "12px" },
             justifyItems: { xs: "center", lg: "stretch" },
             px: { xs: 2, md: 0 },
           }}
@@ -139,18 +140,18 @@ const GeneticServices = () => {
             <Box
               key={service.id}
               sx={{
-                width: { xs: "100%", sm: "310px" },
+                width: { xs: "100%", sm: "310px", md: "350px" },
                 maxWidth: "310px",
-                height: "auto",
+                // height: "auto",
                 minHeight: { xs: "auto", sm: "190px" },
-                backgroundColor: "#F8F6F2",
+                backgroundColor: "#f8fdfa",
                 borderRadius: "16px",
                 border: "1px solid #E0E0E0",
                 padding: { xs: "20px", sm: "10px 20px 40px 20px" },
                 paddingTop: { xs: "24px", sm: "32px" },
                 display: "flex",
                 flexDirection: "column",
-                gap: { xs: "16px", sm: "32px" },
+                gap: { xs: "12px", sm: "16px", md: "16px" },
                 transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 "&:hover": {
                   transform: "translateY(-4px)",

@@ -16,9 +16,8 @@ const MapComponent = dynamic(() => import("./MapComponent"), {
       }}
     >
       <Typography
+        className="onest-500"
         sx={{
-          fontFamily: "Onest",
-          fontWeight: 500,
           fontSize: "16px",
           color: "#666666",
         }}
@@ -101,10 +100,9 @@ const LocationMap = () => {
             {/* Left - Title and Description */}
             <Box sx={{ flex: 1 }}>
               <Typography
+                className="onest-700"
                 sx={{
-                  fontFamily: "Onest",
-                  fontWeight: 700,
-                  fontSize: { xs: "28px", md: "36px", lg: "40px" },
+                  fontSize: { xs: "28px", md: "34px", lg: "34px" },
                   lineHeight: "1.3",
                   color: "#000000",
                   marginBottom: { xs: "12px", md: "16px" },
@@ -113,9 +111,8 @@ const LocationMap = () => {
                 Where to find us?
               </Typography>
               <Typography
+                className="onest-400"
                 sx={{
-                  fontFamily: "Onest",
-                  fontWeight: 400,
                   fontSize: { xs: "15px", md: "16px" },
                   lineHeight: "1.6",
                   color: "#555555",
@@ -133,13 +130,12 @@ const LocationMap = () => {
               <Select
                 value={selectedCity}
                 onChange={handleCityChange}
+                className="onest-500"
                 sx={{
-                  fontFamily: "Onest",
-                  fontWeight: 500,
-                  fontSize: "16px",
+                  fontSize: "14px",
                   backgroundColor: "#FFFFFF",
                   borderRadius: "8px",
-                  minWidth: "150px",
+                  minWidth: "100px",
                   "& .MuiOutlinedInput-notchedOutline": {
                     borderColor: "#E0E0E0",
                   },
@@ -152,14 +148,7 @@ const LocationMap = () => {
                 }}
               >
                 {cities.map((city) => (
-                  <MenuItem
-                    key={city}
-                    value={city}
-                    sx={{
-                      fontFamily: "Onest",
-                      fontWeight: 500,
-                    }}
-                  >
+                  <MenuItem key={city} value={city} className="onest-500">
                     {city}
                   </MenuItem>
                 ))}
@@ -171,7 +160,7 @@ const LocationMap = () => {
           <Box
             sx={{
               width: "100%",
-              height: { xs: "400px", md: "500px", lg: "600px" },
+              height: { xs: "400px", md: "500px", lg: "500px" },
               borderRadius: "12px",
               overflow: "hidden",
               boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)",

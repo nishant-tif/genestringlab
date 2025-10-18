@@ -58,9 +58,8 @@ const Aboutbanner = () => {
           >
             {/* About Us Label */}
             <Typography
+              className="onest-600"
               sx={{
-                fontFamily: "Onest",
-                fontWeight: 600,
                 fontSize: { xs: "14px", md: "16px" },
                 lineHeight: "1.5",
                 color: "#666666",
@@ -72,9 +71,8 @@ const Aboutbanner = () => {
 
             {/* Main Heading */}
             <Typography
+              className="onest-700"
               sx={{
-                fontFamily: "Onest",
-                fontWeight: 700,
                 fontSize: { xs: "20px", sm: "24px", md: "28px", lg: "32px" },
                 lineHeight: "1.4",
                 color: "#000000",
@@ -104,9 +102,8 @@ const Aboutbanner = () => {
           >
             {/* First Paragraph */}
             <Typography
+              className="onest-400"
               sx={{
-                fontFamily: "Onest",
-                fontWeight: 400,
                 fontSize: { xs: "16px", md: "18px" },
                 lineHeight: "1.8",
                 color: "#333333",
@@ -115,15 +112,27 @@ const Aboutbanner = () => {
             >
               Established to bridge the gap between world-class genetic testing
               and everyday healthcare needs, we are{" "}
-              <Box component="span" sx={{ fontWeight: 700, color: "#000000" }}>
+              <Box
+                component="span"
+                className="onest-700"
+                sx={{ color: "#000000" }}
+              >
                 NABL-accredited
               </Box>
               ,{" "}
-              <Box component="span" sx={{ fontWeight: 700, color: "#000000" }}>
+              <Box
+                component="span"
+                className="onest-700"
+                sx={{ color: "#000000" }}
+              >
                 ISO 15189:2022 certified
               </Box>
               , and{" "}
-              <Box component="span" sx={{ fontWeight: 700, color: "#000000" }}>
+              <Box
+                component="span"
+                className="onest-700"
+                sx={{ color: "#000000" }}
+              >
                 PCPNDT registered
               </Box>
               , headquartered in the heart of the National Capital Region (NCR),
@@ -132,9 +141,8 @@ const Aboutbanner = () => {
 
             {/* Second Paragraph */}
             <Typography
+              className="onest-400"
               sx={{
-                fontFamily: "Onest",
-                fontWeight: 400,
                 fontSize: { xs: "16px", md: "18px" },
                 lineHeight: "1.8",
                 color: "#333333",
