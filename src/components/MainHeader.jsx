@@ -46,7 +46,7 @@ const MainHeader = () => {
               }}
             >
               <Image
-                src="/images/logo.png"
+                src="/images/logo.svg"
                 alt="GENESTRING LAB"
                 width={127}
                 height={37}

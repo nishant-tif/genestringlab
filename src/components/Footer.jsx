@@ -20,7 +20,11 @@ const Footer = () => {
     <Box
       sx={{
         backgroundColor: "#F8F6F2",
-        padding: { xs: "40px 0 30px 0", md: "60px 0 40px 0" },
+        padding: {
+          xs: "40px 20px 30px 20px",
+          md: "60px 40px 40px 40px",
+          lg: "60px 60px 40px 60px",
+        },
       }}
     >
       <Container maxWidth="xl">
@@ -45,23 +49,44 @@ const Footer = () => {
               justifyContent: "center",
             }}
           >
-            <Typography
+            <Box
               sx={{
-                color: "#333333",
-                fontFamily: "Onest",
-                fontWeight: 500,
-                fontSize: { xs: "24px", sm: "28px", md: "34px" },
-                lineHeight: "100%",
-                letterSpacing: "0%",
-                textTransform: "capitalize",
-                margin: 0,
-                padding: 0,
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
               }}
             >
-              Subscribe For
-              <br />
-              Healthy Updates!
-            </Typography>
+              <Typography
+                sx={{
+                  color: "#333333",
+                  fontFamily: "Onest",
+                  fontWeight: 500,
+                  fontSize: { xs: "24px", sm: "28px", md: "34px" },
+                  lineHeight: 1,
+                  letterSpacing: "0%",
+                  textTransform: "capitalize",
+                  margin: 0,
+                  padding: 0,
+                }}
+              >
+                Subscribe For
+              </Typography>
+              <Typography
+                sx={{
+                  color: "#333333",
+                  fontFamily: "Onest",
+                  fontWeight: 500,
+                  fontSize: { xs: "24px", sm: "28px", md: "34px" },
+                  lineHeight: 1,
+                  letterSpacing: "0%",
+                  textTransform: "capitalize",
+                  margin: 0,
+                  padding: 0,
+                }}
+              >
+                Healthy Updates!
+              </Typography>
+            </Box>
           </Box>
 
           <Box
@@ -100,6 +125,10 @@ const Footer = () => {
                   fontSize: { xs: "12px", md: "14px" },
                   padding: { xs: "16px 20px", md: "18px 24px" },
                   height: "auto",
+                  "&::placeholder": {
+                    color: "black",
+                    opacity: 1,
+                  },
                 },
               }}
             />
@@ -151,7 +180,7 @@ const Footer = () => {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                gap: { xs: 2, md: 0 },
+                gap: { xs: "16px", md: "20px" },
               }}
             >
               <Box
@@ -161,7 +190,7 @@ const Footer = () => {
                 }}
               >
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo.svg"
                   alt="GENESTRING LAB"
                   width={188}
                   height={48}

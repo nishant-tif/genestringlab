@@ -90,7 +90,7 @@ const SetApart = () => {
               display: "grid",
               gridTemplateColumns: {
                 xs: "1fr",
-                md: "372px 372px 372px",
+                md: "380px 372px 380px",
               },
               gap: { xs: "20px", md: "24px" },
               justifyContent: "center",
@@ -102,19 +102,19 @@ const SetApart = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "30px",
+                gap: "24px",
               }}
             >
               {leftFeatures.map((feature) => (
                 <Box
                   key={feature.id}
                   sx={{
-                    width: { xs: "100%", md: "290px" },
-                    height: "90px",
+                    width: { xs: "100%", md: "380px" },
+                    height: "130px",
                     backgroundColor: "#FAFAFA",
                     border: "1px solid #EBEBEB",
                     borderRadius: "12px",
-                    padding: "20px",
+                    padding: "24px",
                     display: "flex",
                     flexDirection: "row",
                     alignItems: "center",
@@ -176,7 +176,7 @@ const SetApart = () => {
                     <Typography
                       className="onest-600"
                       sx={{
-                        fontSize: { xs: "18px", md: "20px" },
+                        fontSize: { xs: "18px", md: "18px" },
                         lineHeight: "1.3",
                         color: "#000000",
                       }}
@@ -199,7 +199,7 @@ const SetApart = () => {
               <Box
                 sx={{
                   width: "372px",
-                  height: "584px",
+                  height: "555px",
                   borderRadius: "8px",
                   border: "1px solid #EEEEEE",
                   overflow: "hidden",
@@ -222,19 +222,19 @@ const SetApart = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "30px",
+                gap: "24px",
               }}
             >
               {rightFeatures.map((feature) => (
                 <Box
                   key={feature.id}
                   sx={{
-                    width: { xs: "100%", md: "310px" },
-                    height: "90px",
+                    width: { xs: "100%", md: "380px" },
+                    height: "130px",
                     backgroundColor: "#FAFAFA",
                     border: "1px solid #EBEBEB",
                     borderRadius: "12px",
-                    padding: "20px",
+                    padding: "24px",
                     display: "flex",
                     flexDirection: "row",
                     alignItems: "center",
@@ -296,7 +296,7 @@ const SetApart = () => {
                     <Typography
                       className="onest-600"
                       sx={{
-                        fontSize: { xs: "18px", md: "20px" },
+                        fontSize: { xs: "18px", md: "18px" },
                         lineHeight: "1.3",
                         color: "#000000",
                       }}

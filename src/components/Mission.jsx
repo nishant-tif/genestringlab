@@ -6,7 +6,7 @@ const Mission = () => {
     <Box
       sx={{
         backgroundColor: "#FFFFFF",
-        padding: { xs: "60px 0", md: "50px 0", lg: "70px 0" },
+        padding: { xs: "60px 0", md: "40px 0", lg: "40px 0" },
       }}
     >
       <Container maxWidth="lg">
@@ -14,7 +14,7 @@ const Mission = () => {
           sx={{
             backgroundColor: "#F8F6F2",
             borderRadius: "24px",
-            padding: { xs: "50px 30px", sm: "60px 50px", md: "70px 80px" },
+            padding: { xs: "50px 30px", sm: "60px 50px", md: "50px 40px" },
             textAlign: "center",
             mx: { xs: 2, md: 4 },
           }}
@@ -24,10 +24,10 @@ const Mission = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 700,
-              fontSize: { xs: "32px", sm: "36px", md: "40px" },
+              fontSize: { xs: "24px", sm: "24px", md: "28px" },
               lineHeight: "1.3",
               color: "#000000",
-              marginBottom: { xs: "24px", md: "30px" },
+              marginBottom: { xs: "24px", md: "24px" },
             }}
           >
             Our Mission
@@ -38,8 +38,8 @@ const Mission = () => {
             sx={{
               fontFamily: "Onest",
               fontWeight: 400,
-              fontSize: { xs: "15px", md: "16px" },
-              lineHeight: "1.7",
+              fontSize: { xs: "15px", md: "18px" },
+              lineHeight: "1.4",
               color: "#555555",
               maxWidth: "1050px",
               margin: "0 auto",

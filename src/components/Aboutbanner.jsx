@@ -8,82 +8,22 @@ const Aboutbanner = () => {
         backgroundColor: "#FFFFFF",
       }}
     >
-      {/* Top Section - Full Width Image with Overlayed Card */}
+      {/* Top Section - Full Width Hero Image */}
       <Box
         sx={{
-          position: "relative",
           width: "100%",
-          height: { xs: "400px", md: "500px", lg: "600px" },
-          marginBottom: { xs: "40px", md: "80px" },
+          marginBottom: { xs: "40px", md: "60px" },
         }}
       >
-        {/* Full Width Image */}
-        <Box
-          sx={{
+        <img
+          src="/images/abouthero.png"
+          alt="About Genestrings Lab"
+          style={{
             width: "100%",
-            height: "100%",
-            overflow: "hidden",
+            height: "auto",
+            display: "block",
           }}
-        >
-          <img
-            src="/images/aboutbanner.svg"
-            alt="About Genestrings Lab"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
-        </Box>
-
-        {/* Overlayed White Card from Right */}
-        <Container maxWidth="xl">
-          <Box
-            sx={{
-              position: "absolute",
-              right: { xs: "20px", md: "80px", lg: "-10px" },
-              top: "50%",
-              transform: "translateY(-50%)",
-              backgroundColor: "#FFFFFF",
-              borderRadius: "16px",
-              padding: { xs: "24px 20px", md: "40px 48px", lg: "48px 56px" },
-              maxWidth: {
-                xs: "calc(100% - 40px)",
-                sm: "500px",
-                md: "600px",
-                lg: "700px",
-              },
-              boxShadow: "0 8px 32px rgba(0, 0, 0, 0.12)",
-            }}
-          >
-            {/* About Us Label */}
-            <Typography
-              className="onest-600"
-              sx={{
-                fontSize: { xs: "14px", md: "16px" },
-                lineHeight: "1.5",
-                color: "#666666",
-                marginBottom: { xs: "12px", md: "16px" },
-              }}
-            >
-              About Us
-            </Typography>
-
-            {/* Main Heading */}
-            <Typography
-              className="onest-700"
-              sx={{
-                fontSize: { xs: "20px", sm: "24px", md: "28px", lg: "32px" },
-                lineHeight: "1.4",
-                color: "#000000",
-              }}
-            >
-              At Genestrings Lab, we are redefining access to advanced genetic
-              diagnostics by blending scientific precision with compassionate
-              care.
-            </Typography>
-          </Box>
-        </Container>
+        />
       </Box>
 
       {/* Bottom Section - Paragraphs */}
@@ -104,7 +44,7 @@ const Aboutbanner = () => {
             <Typography
               className="onest-400"
               sx={{
-                fontSize: { xs: "16px", md: "18px" },
+                fontSize: { xs: "16px", md: "20px" },
                 lineHeight: "1.8",
                 color: "#333333",
                 marginBottom: { xs: "20px", md: "24px" },
@@ -143,7 +83,7 @@ const Aboutbanner = () => {
             <Typography
               className="onest-400"
               sx={{
-                fontSize: { xs: "16px", md: "18px" },
+                fontSize: { xs: "16px", md: "20px" },
                 lineHeight: "1.8",
                 color: "#333333",
               }}
