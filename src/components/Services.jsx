@@ -34,10 +34,10 @@ const Services = () => {
     <Box
       sx={{
         backgroundColor: "#FFFFFF",
-        padding: { xs: "60px 0", md: "80px 0", lg: "100px 0" },
+        padding: { xs: "60px 0", md: "60px 0", lg: "80px 0" },
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Box
           sx={{
             mx: { xs: 2, md: 4 },
@@ -77,15 +77,11 @@ const Services = () => {
           {/* Services Grid */}
           <Box
             sx={{
-              display: "grid",
-              gridTemplateColumns: {
-                xs: "1fr",
-                sm: "repeat(2, 1fr)",
-                md: "repeat(3, 1fr)",
-                lg: "repeat(5, 1fr)",
-              },
-              gap: "20px",
-              marginBottom: { xs: "30px", md: "32px" },
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "16px",
+              justifyContent: "center",
+              marginBottom: { xs: "32px", md: "32px" },
             }}
           >
             {services.map((service) => (
@@ -95,22 +91,31 @@ const Services = () => {
                   backgroundColor: "#F3EFE8",
                   border: "1px solid #EEEEEE",
                   borderRadius: "8px",
-                  padding: "59px 32px",
+                  padding: { xs: "24px 20px", md: "32px 24px" },
                   display: "flex",
                   flexDirection: "column",
-                  gap: "12px",
-                  width: { xs: "100%", lg: "156px" },
-                  height: "116px",
+                  gap: "8px",
+                  minWidth: { xs: "280px", md: "180px" },
+                  minHeight: { xs: "140px", md: "190px" },
+                  flex: {
+                    xs: "1 1 100%",
+                    sm: "1 1 calc(50% - 8px)",
+                    md: "0 1 170px",
+                  },
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: "0 8px 20px rgba(0, 0, 0, 0.08)",
+                  },
                 }}
               >
                 {/* Number */}
                 <Typography
+                  className="onest-400"
                   sx={{
-                    fontFamily: "Onest",
-                    fontWeight: 400,
-                    fontSize: { xs: "16px", md: "18px" },
+                    fontSize: "14px",
                     lineHeight: "1.3",
-                    color: "#666666",
+                    color: "#888888",
                   }}
                 >
                   {service.number}
@@ -118,12 +123,11 @@ const Services = () => {
 
                 {/* Title */}
                 <Typography
+                  className="onest-600"
                   sx={{
-                    fontFamily: "Onest",
-                    fontWeight: 600,
-                    fontSize: { xs: "18px", md: "20px" },
-                    lineHeight: "1.4",
-                    color: "#333333",
+                    fontSize: { xs: "16px", md: "17px" },
+                    lineHeight: "1.5",
+                    color: "#355F58",
                   }}
                 >
                   {service.title}

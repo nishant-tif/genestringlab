@@ -95,7 +95,7 @@ const TeamDetails = () => {
                 sx={{
                   fontFamily: "Onest",
                   fontWeight: 700,
-                  fontSize: { xs: "32px", sm: "36px", md: "40px" },
+                  fontSize: { xs: "32px", sm: "32px", md: "32px" },
                   lineHeight: "1.2",
                   color: "#000000",
                 }}
@@ -109,7 +109,7 @@ const TeamDetails = () => {
                   fontWeight: 400,
                   fontSize: { xs: "15px", md: "16px" },
                   lineHeight: "1.6",
-                  color: "#555555",
+                  color: "#565D6D",
                 }}
               >
                 Led by women pioneers in fertility and diagnostics like Dr.
@@ -181,7 +181,7 @@ const TeamDetails = () => {
                     left: "50%",
                     transform: "translateX(-50%) translateY(80%)",
                     width: "216px",
-                    height: "82.29px",
+                    height: "92.29px",
                     backgroundColor: "#F8F6F2",
                     borderTop: "10px solid #137C62",
                     borderTopLeftRadius: "6px",
@@ -199,7 +199,7 @@ const TeamDetails = () => {
                     sx={{
                       fontFamily: "Onest",
                       fontWeight: 700,
-                      fontSize: { xs: "16px", md: "18px" },
+                      fontSize: { xs: "14px", md: "14px" },
                       lineHeight: "1.3",
                       color: "#000000",
                     }}
@@ -212,7 +212,7 @@ const TeamDetails = () => {
                     sx={{
                       fontFamily: "Onest",
                       fontWeight: 400,
-                      fontSize: { xs: "13px", md: "14px" },
+                      fontSize: { xs: "12px", md: "12px" },
                       lineHeight: "1.4",
                       color: "#666666",
                     }}
@@ -236,7 +236,7 @@ const TeamDetails = () => {
         <Container maxWidth="xl">
           <Box
             sx={{
-              backgroundColor: "#4A8A7A",
+              backgroundColor: "#137C62",
               borderRadius: "24px",
               padding: { xs: "40px 30px", sm: "50px 60px", md: "60px 80px" },
               textAlign: "center",
@@ -247,10 +247,10 @@ const TeamDetails = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 700,
-                fontSize: { xs: "28px", sm: "32px", md: "36px" },
+                fontSize: { xs: "24px", sm: "38px", md: "32px" },
                 lineHeight: "1.3",
                 color: "#FFFFFF",
-                marginBottom: { xs: "20px", md: "24px" },
+                marginBottom: { xs: "14px", md: "18px" },
               }}
             >
               Why It Matters?
@@ -260,7 +260,7 @@ const TeamDetails = () => {
               sx={{
                 fontFamily: "Onest",
                 fontWeight: 400,
-                fontSize: { xs: "15px", md: "16px" },
+                fontSize: { xs: "15px", md: "18px" },
                 lineHeight: "1.7",
                 color: "#FFFFFF",
                 maxWidth: "1100px",
